@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE CURATOR | Engineering &amp; Contact</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline": "#8e9192",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-secondary": "#303031",
+                        "secondary-fixed": "#e3e2e2",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary": "#303030",
+                        "inverse-primary": "#5d5f5f",
+                        "inverse-on-surface": "#313030",
+                        "background": "#131313",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#c4c7c8",
+                        "secondary-container": "#464747",
+                        "on-tertiary-container": "#656464",
+                        "surface-tint": "#c6c6c7",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "surface-variant": "#353535",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "primary": "#ffffff",
+                        "on-primary-fixed-variant": "#454747",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-background": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#464747",
+                        "surface-dim": "#131313",
+                        "on-primary-fixed": "#1a1c1c",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "surface-container-highest": "#353535",
+                        "error": "#ffb4ab",
+                        "surface": "#131313",
+                        "surface-bright": "#393939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed": "#e4e2e1",
+                        "on-primary-container": "#636565",
+                        "secondary": "#c7c6c6",
+                        "tertiary-container": "#e4e2e1",
+                        "primary-container": "#e2e2e2",
+                        "outline-variant": "#444748",
+                        "on-secondary-container": "#b5b5b5",
+                        "surface-container": "#20201f",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary": "#2f3131",
+                        "surface-container-high": "#2a2a2a"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            overflow-x: hidden;
+        }
+        .text-justify-custom {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            background: rgba(19, 19, 19, 0.8);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-8 w-full">
+<div class="text-2xl font-light tracking-[0.3em] uppercase text-white font-headline">THE CURATOR</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-white/60 font-light hover:text-white transition-colors text-[10px] uppercase tracking-widest Inter" href="../home_l_espace_galerie/code.html">Home</a>
+<a class="text-white/60 font-light hover:text-white transition-colors text-[10px] uppercase tracking-widest Inter" href="../music_l_espace_galerie/code.html">Music</a>
+<a class="text-white/60 font-light hover:text-white transition-colors text-[10px] uppercase tracking-widest Inter" href="../dance_l_espace_galerie/code.html">Dance</a>
+<a class="text-white/60 font-light hover:text-white transition-colors text-[10px] uppercase tracking-widest Inter" href="#">Theatre</a>
+<a class="text-white/60 font-light hover:text-white transition-colors text-[10px] uppercase tracking-widest Inter" href="#">Photo</a>
+<a class="text-white/60 font-light hover:text-white transition-colors text-[10px] uppercase tracking-widest Inter" href="#">Models</a>
+<a class="text-white font-medium border-b border-white/40 pb-1 text-[10px] uppercase tracking-widest Inter" href="../engineering_contact_l_espace_galerie/code.html">Contact</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-white">menu</span>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section: Engineering Logic -->
+<section class="px-6 md:px-12 mb-48">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-12 items-end">
+<div class="md:col-span-8">
+<h1 class="font-headline italic text-5xl md:text-8xl tracking-tighter text-white mb-8">
+                        The Logic of <br/>Curated Chaos
+                    </h1>
+</div>
+<div class="md:col-span-4 md:text-right">
+<p class="font-label text-[10px] uppercase tracking-[0.4em] text-white/40 mb-2">Academic Foundation</p>
+<p class="font-body text-sm font-light leading-relaxed max-w-xs md:ml-auto">
+                        Computer Engineering at FEUP is not just code. It is the architectural discipline required to frame artistic expression within functional reality.
+                    </p>
+</div>
+</div>
+</section>
+<!-- The Duality Section: Bento Grid -->
+<section class="px-6 md:px-12 mb-72">
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-auto md:h-[800px]">
+<!-- Large Image: Architecture -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden bg-surface-container-low">
+<img alt="Coding detail" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000 grayscale" data-alt="Monochromatic macro shot of elegant source code on a screen with dramatic shadows and sharp contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuByRm1EtOoWmekjjgtwTwWDy9LcolrVaOSvwXkF_ZfxYCMH5I0hV54a5fosGSgckNq4QnjOaihXjptahammcmpnnp4mDlyOZMr9PO5UvFqYg0sM40ITKYzKqlzhl7UP0GrTGbi3PgnSXrp7hjClB3vuuje0bMbBU73cBw9sObiR-H2YpHG_aRp3NEllTWZVsU3e9rrVVJv0pTxGqp3fs4D4NcIDNT0MZ-1nE9w1BQoZjMpax5ijMH4Ss5rLoqdMbvQbb_jJ6bucUO_s"/>
+<div class="absolute bottom-8 left-8">
+<p class="font-label text-[10px] uppercase tracking-widest text-white/60 mb-1">Methodology</p>
+<h3 class="font-headline text-3xl italic text-white">Structural Integrity</h3>
+</div>
+</div>
+<!-- Small Box: FEUP Logo/Identity -->
+<div class="md:col-span-1 bg-surface-container flex flex-col justify-center p-10">
+<p class="font-label text-[10px] uppercase tracking-widest text-primary mb-6">Institution</p>
+<p class="font-headline text-2xl text-white mb-4 italic">FEUP, Porto</p>
+<p class="text-xs font-light text-white/50 leading-loose">
+                        University of Porto Faculty of Engineering. A hub of rigorous logic where complex systems are built to endure.
+                    </p>
+</div>
+<!-- Large Horizontal: Complementing -->
+<div class="md:col-span-1 bg-surface-container-lowest p-10 flex flex-col justify-end border-l border-white/5">
+<span class="material-symbols-outlined text-4xl text-white/20 mb-8" style="font-variation-settings: 'FILL' 0;">architecture</span>
+<p class="font-body text-xs font-light text-white/60 leading-relaxed uppercase tracking-widest">
+                        Bridging the gap between the algorithmic and the aesthetic.
+                    </p>
+</div>
+<!-- Wide Bottom: Engineering Content -->
+<div class="md:col-span-2 bg-surface-container-high p-12 flex items-center">
+<div class="max-w-md">
+<h4 class="font-headline text-4xl text-white mb-6">The Engineer's Lens</h4>
+<p class="font-body text-sm font-light text-white/70 leading-relaxed mb-6">
+                            Logic provides the canvas; creativity provides the pigment. My engineering background allows me to build digital experiences that are not only visually arresting but fundamentally performant.
+                        </p>
+<div class="flex space-x-6">
+<div class="flex flex-col">
+<span class="text-white font-headline text-xl">01.</span>
+<span class="text-[9px] uppercase tracking-widest text-white/40">Scalability</span>
+</div>
+<div class="flex flex-col">
+<span class="text-white font-headline text-xl">02.</span>
+<span class="text-[9px] uppercase tracking-widest text-white/40">Precision</span>
+</div>
+<div class="flex flex-col">
+<span class="text-white font-headline text-xl">03.</span>
+<span class="text-[9px] uppercase tracking-widest text-white/40">Fluidity</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-6 md:px-12 mb-72" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-24">
+<div class="md:col-span-5">
+<h2 class="font-headline italic text-5xl md:text-7xl text-white mb-12">Inquire</h2>
+<p class="font-body text-sm font-light text-white/60 leading-loose mb-12">
+                        Seeking collaboration on projects that demand both technical rigor and artistic vision. Let us discuss the architecture of your next endeavor.
+                    </p>
+<div class="space-y-8">
+<div>
+<p class="font-label text-[10px] uppercase tracking-[0.3em] text-white/40 mb-2">Direct Mail</p>
+<a class="font-headline text-2xl text-white hover:text-primary-fixed-dim transition-colors" href="mailto:hello@thecurator.com">hello@thecurator.com</a>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-[0.3em] text-white/40 mb-2">Office</p>
+<p class="font-headline text-2xl text-white">Porto, Portugal</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-7">
+<form class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-white/40 block mb-2">Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 py-4 px-0 text-white focus:ring-0 focus:border-primary transition-all placeholder:text-white/10 font-body text-sm" placeholder="John Doe" type="text"/>
+</div>
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-white/40 block mb-2">Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant/20 py-4 px-0 text-white focus:ring-0 focus:border-primary transition-all placeholder:text-white/10 font-body text-sm" placeholder="john@company.com" type="email"/>
+</div>
+</div>
+<div class="relative group">
+<label class="font-label text-[10px] uppercase tracking-widest text-white/40 block mb-2">Project Brief</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/20 py-4 px-0 text-white focus:ring-0 focus:border-primary transition-all placeholder:text-white/10 font-body text-sm resize-none" placeholder="How can logic serve your vision?" rows="4"></textarea>
+</div>
+<button class="bg-primary text-on-primary font-label text-[10px] uppercase tracking-[0.3em] px-12 py-5 hover:bg-primary-fixed-dim transition-colors duration-500 w-full md:w-auto" type="submit">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-900 dark:bg-[#131313] w-full py-24 px-12 flex flex-col md:flex-row justify-between items-end w-full">
+<div class="mb-12 md:mb-0">
+<p class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 mb-4">Social Curations</p>
+<div class="flex space-x-8">
+<a class="text-white/40 font-sans tracking-widest text-[10px] uppercase Inter hover:text-white transition-colors duration-300" href="#">Spotify</a>
+<a class="text-white/40 font-sans tracking-widest text-[10px] uppercase Inter hover:text-white transition-colors duration-300" href="#">YouTube</a>
+<a class="text-white/40 font-sans tracking-widest text-[10px] uppercase Inter hover:text-white transition-colors duration-300" href="#">Instagram</a>
+</div>
+</div>
+<div class="text-right">
+<p class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40">© 2024 ARTIST COLLECTIVE. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+</body></html>

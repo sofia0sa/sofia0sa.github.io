@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;family=Newsreader:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/> -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1b1c1c",
+              "outline": "#8e9192",
+              "inverse-surface": "#e5e2e1",
+              "tertiary": "#ffffff",
+              "secondary-fixed-dim": "#c7c6c6",
+              "on-secondary": "#303031",
+              "secondary-fixed": "#e3e2e2",
+              "on-surface": "#e5e2e1",
+              "on-tertiary": "#303030",
+              "inverse-primary": "#5d5f5f",
+              "inverse-on-surface": "#313030",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "on-surface-variant": "#c4c7c8",
+              "secondary-container": "#464747",
+              "on-tertiary-container": "#656464",
+              "surface-tint": "#c6c6c7",
+              "primary-fixed-dim": "#c6c6c7",
+              "surface-variant": "#353535",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "primary": "#ffffff",
+              "on-primary-fixed-variant": "#454747",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-background": "#e5e2e1",
+              "on-secondary-fixed-variant": "#464747",
+              "surface-dim": "#131313",
+              "on-primary-fixed": "#1a1c1c",
+              "primary-fixed": "#e2e2e2",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-container-highest": "#353535",
+              "error": "#ffb4ab",
+              "surface": "#131313",
+              "surface-bright": "#393939",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed": "#e4e2e1",
+              "on-primary-container": "#636565",
+              "secondary": "#c7c6c6",
+              "tertiary-container": "#e4e2e1",
+              "primary-container": "#e2e2e2",
+              "outline-variant": "#444748",
+              "on-secondary-container": "#b5b5b5",
+              "surface-container": "#20201f",
+              "surface-container-low": "#1c1b1b",
+              "on-primary": "#2f3131",
+              "surface-container-high": "#2a2a2a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131313;
+        color: #e5e2e1;
+        -webkit-font-smoothing: antialiased;
+      }
+      .perspective-1000 {
+        perspective: 1000px;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<div id="site-navbar"></div>
+<script src="./navbar-loader.js" defer></script>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="px-6 md:px-12 mb-24 md:mb-48">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row items-end justify-between gap-12">
+<div class="max-w-4xl">
+<h1 class="font-headline italic text-7xl md:text-[9rem] leading-[0.85] tracking-tighter text-white">
+                        Dança
+                    </h1>
+</div>
+<div class="md:w-1/3 text-right">
+<p class="font-label text-[10px] tracking-widest uppercase text-white/40 mb-4"> Hip Hop | Comercial | Contemporâneo </p>
+<p class="font-body text-sm leading-relaxed text-on-surface-variant font-light">
+                        Desde os 8 anos que a dança é uma das paixões, tendo explorado sobretudo o HipHop, Comercial e Contemporâneo. As aulas de dança tomaram lugar, inicialmente, na Associação ANOZ, mais tarde na escola Turning Point em São João da Madeira e, atualmente, na PortDance Studios, no Porto. Participou e foi inclusivamente premiada em vários espetáculos de dança.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Cinematic Scroller -->
+<section class="bg-surface-container-lowest py-24 mb-24 overflow-hidden">
+<div class="flex gap-12 md:gap-24 px-6 md:px-12 overflow-x-auto no-scrollbar pb-12 items-center">
+<div class="flex-none w-[80vw] md:w-[60vw] group cursor-pointer">
+<div class="aspect-[21/9] bg-surface-container-highest relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 ease-out" data-alt="dramatic wide shot of a ballet dancer mid-leap in a dark industrial loft with shafts of atmospheric light and dust particles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxe-4ioHdvaN5HIKhkhE6m-DKFxVAGmo-uDXiXLgg29Ojf4lt-zKKwn9XsSIV0BdxqqQ_Kp-tYBS1625hGh_RpEZlzIVqffZFDTJmHTz3CSh7hVBA-SP88VyhS0_XJdtYwD4Hcu11EuMcyQVCrAvlpJ98lGSAwANBscfB42lqjHTAtBlqVnv-EtyYD16wclrxLNCNM_IoyhVnc7rzoC9HMoUDjLgFK3QkghOmgzJNSE-CTMNpaI9L1w8BjVJAmKXmMhYOxL7SLjAWA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-white/60 block mb-2">Film 01</span>
+<h3 class="font-headline italic text-4xl text-white">Turning Point: The Rehearsal</h3>
+</div>
+</div>
+</div>
+<div class="flex-none w-[60vw] md:w-[40vw] group cursor-pointer mt-24">
+<div class="aspect-[16:9] bg-surface-container-highest relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 ease-out" data-alt="contemporary dancer in fluid motion with motion blur effect, warm studio lighting, minimalist beige background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOi4342vmehUKXAcSw43oDF2-kRknOtN7ZiLGuXWVksCa3_oQXMD0eEZvW-V9XEi4XXcCfBJjNvxZxOPbSynq43HTbCpuQ5-Hi0L8N7f-o41M3pc4ceKwyFHLBS4c6Uo_Hg2mndyUb9oN1BLs1HS-HTmTwAuKbcMLoqRXk5RfFBxHn-txNPNpjuYpDAvUWiShIwRRtnoTCIiyRnojiujz_IisdtygfU2exM8lTiO8NDt_VZw7wBGwjuT23Y0x1lUfusP3kCeBr4UUo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-white/60 block mb-2">Motion study</span>
+<h3 class="font-headline italic text-3xl text-white">Areosa Dance: Liquid Form</h3>
+</div>
+</div>
+</div>
+<div class="flex-none w-[70vw] md:w-[50vw] group cursor-pointer -mt-12">
+<div class="aspect-[16:9] bg-surface-container-highest relative overflow-hidden">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000 ease-out" data-alt="black and white close up of feet in ballet pointe shoes against a dark background, high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtGP0vcBnwZFEy5R9yGun3NdA0ptIW2Wt1b8stfR_fPRC-by6wUSBtgX7ABINtcgew0WxHspOSBOSCYKlRkTKFeq05dw1HSxH8avr-2BY9CjeCr3MgaT_vbPStWMbrUVwdnWp4_fF9ZmLhvqVzrpyyVaHodKa5BehrqrNZcVO6wTmORMnyfxWJC3xu6oT8TTX7dxcRaB3oxktacJl7yLRoLWPvJVav7WVWNxiGWx97WvI8MZMie_EWc71dKnkn6xq2JDhc6taB5hon"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-white/60 block mb-2">Details</span>
+<h3 class="font-headline italic text-3xl text-white">Structural Tension</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Grid Section -->
+<section class="px-6 md:px-12 max-w-screen-2xl mx-auto mb-48">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-x-12 gap-y-32 items-start">
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-[2000ms]" data-alt="three dancers performing contemporary choreography with shadows cast on a stark white wall behind them" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADjpn7_QiNiaNL5wE14i3GcoU7tt1y7Btr5OLRZwbDVXi9tbVbtLmFNS1-JNeLw83yNarxGio4M-AfcgyVw7yrJpsYrA2cvmPhO3vPmJA4KIpqLvUtJUp0bsLq2Hht0kdE_dCOD0aA9i7qzhPKyAwnGbJore9SCVQ2avo_ZfxLwQ95h0UlMiAte3pMG0AZ5sbDyzr7yqjCnIpJiW910GFG6QbYaaC02UYf-Fc9kaK9VC78f0ORcXRTPTVKSdWH9Rcw44Zvw7Z1ly4_"/>
+</div>
+<div>
+<span class="font-label text-[10px] tracking-widest text-on-surface-variant uppercase">01 / Collaboration</span>
+<h4 class="font-headline text-3xl text-white mt-2">The Collective Ritual</h4>
+<p class="font-body text-xs text-white/40 mt-4 tracking-wider leading-relaxed max-w-xs italic">A study of synchronicity and shared breath. Turning Point Academy.</p>
+</div>
+</div>
+<div class="md:col-span-7 flex flex-col gap-8 md:mt-48">
+<div class="aspect-[16/9] bg-surface-container-low overflow-hidden group relative">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-[2000ms]" data-alt="cinematic shot of a single dancer in a spotlight, dramatic smoke atmosphere, vibrant contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBh6mrhdWAkTReBRcO7Lc2CX3Hmmg3hctvQ_mRnUm6_v3h_d4dsOiKJFBrQmMAwGegYlTteJO8nGpjbvknZYXcZtYSra8oBdg2wqxFhqmQ-cAhwvaMIRf4aiL-lL5wo1CGHrpF6DOMNNVwxsnQqva-lJFom_5FBoaMK-x-2C7Pb-85lo5qOIdxmE6s7vyk1N2WmDmMXcJvEY-myfdOzG7tTgl5qC7zoQk06HJf7qCxQ8754FcN5w1GsJs8ltBJQGD_eTHTuFFKXjaZw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="bg-white/10 backdrop-blur-md border border-white/20 p-6 flex items-center justify-center hover:bg-white/20 transition-all duration-500">
+<span class="material-symbols-outlined text-white text-4xl">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<span class="font-label text-[10px] tracking-widest text-on-surface-variant uppercase">02 / Feature Film</span>
+<h4 class="font-headline text-3xl text-white mt-2 italic">Areosa Soloist Series</h4>
+</div>
+<a class="font-label text-[10px] tracking-widest uppercase text-white border-b border-white/40 pb-1 hover:text-primary-fixed-dim transition-colors" href="#">WATCH FILM</a>
+</div>
+</div>
+<!-- Bento Breakout -->
+<div class="md:col-span-12 grid grid-cols-1 md:grid-cols-4 gap-8 mt-24">
+<div class="bg-surface-container px-12 py-16 flex flex-col justify-between">
+<span class="material-symbols-outlined text-white/20 text-5xl">architecture</span>
+<div>
+<h5 class="font-headline text-2xl text-white mb-4">Space and Volume</h5>
+<p class="font-body text-[11px] text-white/40 leading-relaxed uppercase tracking-widest">Designing the void through physicality.</p>
+</div>
+</div>
+<div class="md:col-span-2 aspect-video bg-surface-container-low relative group overflow-hidden">
+<img class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition-all duration-1000" data-alt="modern dance performance with red lighting, silhouettes of multiple performers in complex poses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA1Sy-o7kwBiWGQrXOB9uGY3fXqghaCShG3iOIPsHmNGN8FV_RHjYaiciVgXas6E-grzFlQEWJM2y9egFhV6z1A_ScC6EcSmZKCQylFaRzYgsWe0RLDwBLUiMuTGvzFXTa1ulBF3DXZ2xuJCotrQDeOKaP_elTMqWn_xdGXEAvuqo_ns9L9TUkCsTU_i1ab37mljCo8Cv6IiAOXpEUwHc_QWFtCgwZG3EItP67NHB38nw0AGQIpqAwcmDwa4uL-CVXrfHDEFgr6ZuJ"/>
+<div class="absolute bottom-8 left-8">
+<h5 class="font-headline text-2xl text-white italic">Chromatic Intensity</h5>
+</div>
+</div>
+<div class="bg-primary flex flex-col items-center justify-center p-8">
+<p class="font-headline italic text-on-primary text-center text-4xl leading-tight">"Movement never lies."</p>
+<p class="font-label text-[9px] tracking-widest uppercase text-on-primary/60 mt-6">— Martha Graham</p>
+</div>
+</div>
+</div>
+</section>
+<!-- School Spotlight -->
+<section class="px-6 md:px-12 py-48 bg-surface-container-low">
+<div class="max-w-screen-xl mx-auto flex flex-col md:flex-row gap-24 items-center">
+<div class="md:w-1/2">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-white/40 mb-8 block">Educational Partners</span>
+<h2 class="font-headline italic text-5xl md:text-7xl text-white mb-12">Turning Point &amp; Areosa</h2>
+<p class="font-body text-base text-on-surface-variant leading-loose font-light mb-8">
+                        Our collaboration with the world's leading dance academies allows us to document the rigorous pursuit of perfection. From the quiet morning barre exercises at <span class="text-white italic">Turning Point</span> to the avant-garde experiments at <span class="text-white italic">Areosa</span>, we capture the evolution of an artist.
+                    </p>
+<div class="flex gap-12 mt-12">
+<button class="bg-white text-on-primary px-8 py-4 font-label text-[10px] tracking-widest uppercase hover:bg-primary-fixed-dim transition-colors">THE ACADEMIES</button>
+<button class="border border-outline-variant/20 text-white px-8 py-4 font-label text-[10px] tracking-widest uppercase hover:border-white transition-colors">OUR PROCESS</button>
+</div>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-4">
+<div class="aspect-[3/4] bg-surface overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="close-up of a dancer stretching their back in a warm studio, light filtering through window blinds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz2Lg-N_0BqdKwnxVs0tpZ3OQs6gnEQrQ2fS9dwMgZpNBeKl3JbmdXacRPTn-CBOOIK5K7LVn9oFAKRRpQ-b6Y7ip0nCuQIUzcqMcjiu9lAfLLV6UVlVvpVz2XkHoMFxs5SdkSj644o81qoJrSR4xYXeXwGHLU1lh_Gx3xxpx1usb8axEQCQ2gwz3NeB3ph1sWajpsOmtgSe3q_9b9n2pGKqZoxkzb984It6HG56HGMtV8kqfPNjVQ0utOAr6dI-QpjLcmHWLg0OTw"/>
+</div>
+<div class="aspect-[3/4] bg-surface mt-12 overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="ballet dancer sitting on floor in contemplation, atmospheric shadows, elegant posture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg3KbRl66xEyhCKvmmRxilFuAjyrePGzwD5UkhOl_rbnseqUXFXMF94YuuxOVJ6Xg-DGvUvGLe2Xjy0NnLZVFY76AGFUDKl3sVWKDcwR3GkXSGk1gRCKOQtYQz5oGsA9a_d676gOvfJCfPRmgw00EZuPYAvoATQ4bq50ft1szXPIF4tzBQ3attQsG_rNzyiRaV8GhChgVR1v440-_pk0aki_cUZZH_-IheQT24Ucv3vMphlWQ13klTLfyBjTdQ9VwUBx9zGuYf4F8X"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="./footer-loader.js" defer></script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

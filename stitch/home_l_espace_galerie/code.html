@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&amp;family=Newsreader:ital,opsz,wght@1,6..72,200;1,6..72,400;1,6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1b1c1c",
+              "outline": "#8e9192",
+              "inverse-surface": "#e5e2e1",
+              "tertiary": "#ffffff",
+              "secondary-fixed-dim": "#c7c6c6",
+              "on-secondary": "#303031",
+              "secondary-fixed": "#e3e2e2",
+              "on-surface": "#e5e2e1",
+              "on-tertiary": "#303030",
+              "inverse-primary": "#5d5f5f",
+              "inverse-on-surface": "#313030",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "on-surface-variant": "#c4c7c8",
+              "secondary-container": "#464747",
+              "on-tertiary-container": "#656464",
+              "surface-tint": "#c6c6c7",
+              "primary-fixed-dim": "#c6c6c7",
+              "surface-variant": "#353535",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "primary": "#ffffff",
+              "on-primary-fixed-variant": "#454747",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-background": "#e5e2e1",
+              "on-secondary-fixed-variant": "#464747",
+              "surface-dim": "#131313",
+              "on-primary-fixed": "#1a1c1c",
+              "primary-fixed": "#e2e2e2",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-container-highest": "#353535",
+              "error": "#ffb4ab",
+              "surface": "#131313",
+              "surface-bright": "#393939",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed": "#e4e2e1",
+              "on-primary-container": "#636565",
+              "secondary": "#c7c6c6",
+              "tertiary-container": "#e4e2e1",
+              "primary-container": "#e2e2e2",
+              "outline-variant": "#444748",
+              "on-secondary-container": "#b5b5b5",
+              "surface-container": "#20201f",
+              "surface-container-low": "#1c1b1b",
+              "on-primary": "#2f3131",
+              "surface-container-high": "#2a2a2a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-italic {
+            font-family: 'Newsreader', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl flex justify-between items-center px-6 md:px-12 py-8 w-full">
+<div class="text-2xl font-light tracking-[0.3em] uppercase text-white">THE CURATOR</div>
+<div class="hidden md:flex gap-10">
+<a class="text-white font-medium border-b border-white/40 pb-1 font-serif italic tracking-tighter Newsreader" href="../home_l_espace_galerie/code.html">Home</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="../music_l_espace_galerie/code.html">Music</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="../dance_l_espace_galerie/code.html">Dance</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="#">Theatre</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="#">Photo</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="#">Models</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="../engineering_contact_l_espace_galerie/code.html">Contact</a>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex flex-col justify-center px-6 md:px-12 pt-32 pb-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 grayscale" data-alt="dramatic high-contrast black and white cinematic portrait of an artist in a dimly lit studio with soft atmospheric smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNwY5dHAhcGMmlixM1pOjmMWBW1BMfFa0gVmdJUCracg7koU0CqYsS7z1M-YgK2D1nNnxHIrlC_-u8iHlA9K5xaZTODcMgqKRCZBlSIFHavJKdLu-tEeW5K9PV1BZaU8yHvCv8DDeqB956pgPVuGt80WhFmIsko8Rse0OQPxtSKBaWNCcaLEKFPQALL8J44EQq58sVjgNXDTD92xbG9BZei0AvWogBnq3vMkhtKDaY7BmATZVmsf1R1i6FW_wvEoHcVBFhHybv9Q9j"/>
+</div>
+<div class="relative z-10 max-w-7xl">
+<p class="label-sm tracking-[0.4em] uppercase text-white/40 mb-4 font-body text-[10px]">Based in London / Global Collaborator</p>
+<h1 class="text-[clamp(4rem,15vw,12rem)] leading-[0.85] serif-italic tracking-tighter mb-8">
+                The <br/>Curator
+            </h1>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-12">
+<h2 class="text-2xl md:text-4xl font-light tracking-tight max-w-xl text-on-surface-variant font-body">
+                    Multidisciplinary Artist <br/> exploring the intersection of movement, sound, and structural engineering.
+                </h2>
+<div class="md:text-right">
+<button class="bg-primary text-on-primary px-10 py-5 text-sm tracking-widest uppercase font-medium hover:bg-primary-fixed-dim transition-colors duration-500">
+                        View Portfolio
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Introduction / Statement -->
+<section class="py-48 px-6 md:px-12 bg-surface-container-low">
+<div class="max-w-4xl mx-auto text-center">
+<p class="text-3xl md:text-5xl leading-relaxed serif-italic font-light">
+                "I seek the architecture in rhythm and the gravity in dance. My work is a continuous dialogue between the <span class="text-white">ephemeral</span> and the <span class="text-white">tangible</span>."
+            </p>
+<div class="mt-20 flex justify-center">
+<div class="w-px h-32 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Works Grid / Cinematic Scroller -->
+<section class="py-32 bg-surface">
+<div class="px-6 md:px-12 mb-24 flex justify-between items-baseline">
+<h3 class="text-5xl serif-italic">Selected Disciplines</h3>
+<span class="label-sm tracking-widest text-white/30 text-[10px] uppercase">Scroll to Explore</span>
+</div>
+<div class="flex flex-col gap-48">
+<!-- Music: Asymmetric Left -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center px-6 md:px-12">
+<div class="md:col-start-1 md:col-span-8 aspect-[21/9] overflow-hidden bg-surface-container-highest group">
+<img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-[2000ms]" data-alt="atmospheric shot of a grand piano in an empty concrete hall with a single spotlight and dust motes dancing in the light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwcogk2RG2hiRzsvo6Qn3fO0k_vkLtFmpySxYcCm0meC3-lDJMgXXdu4X8n2lm01oLR5aR49RHx94x6WgzzVKStcxF_fTpXTNog27BabacANszo3aP_XiAIyLbgmizG1KBXhbkEgABDILbriDykWSJPun3iuahumOlx9MCt1VVuf2prtY0EGcpmU9byRo4p5ydwpOt1xfKUEOd4FPCJ2kX61i0pm9yfZyu9yBEyzm75xzPIhvkBFel9u5RHq0baVAwYOEvkvib9zJs"/>
+</div>
+<div class="md:col-start-10 md:col-span-3">
+<span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">01</span>
+<h4 class="text-4xl serif-italic mb-6">Music</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-light tracking-wide">
+                        Sonic architectures ranging from avant-garde cello compositions to industrial electronic soundscapes designed for immersive installations.
+                    </p>
+<a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors" href="#">Listen</a>
+</div>
+</div>
+<!-- Dance: Asymmetric Right -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center px-6 md:px-12">
+<div class="md:col-start-2 md:col-span-3 order-2 md:order-1">
+<span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">02</span>
+<h4 class="text-4xl serif-italic mb-6">Dance</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-light tracking-wide">
+                        Physical poetry exploring the limits of human kinesis. Specialized in contemporary ballet and neo-classical fusion.
+                    </p>
+<a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors" href="#">Performances</a>
+</div>
+<div class="md:col-start-6 md:col-span-7 order-1 md:order-2 aspect-[16/10] overflow-hidden bg-surface-container-highest group">
+<img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-[2000ms]" data-alt="blurred motion shot of a contemporary dancer in a white silk outfit moving against a dark moody background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzT2KpenlKZTHBDtcaPAoqNepQtvX4yeT1CrgFYL-V81TBCyQ6j8rtUzmw6zEp3PvAHk2qJ0T9bzu0IoLYB-bC0I7U_esrSRCaiqxTVHKQpiimczCbiJhOPEYk1JSp4umdKNn_Nzwq5oDRLpGJR1CTEFT5AECJZ5bUJo8Yu_rx5pnizLIRIi-v0CFoFl-cQuSrdVeKdNlzhQyQ8d5DzFcC2gUK1vuvkE-hPR2DWhyMq8CQNT9khDVgYg2HhLwk5XMAjLWNF5N8rmUC"/>
+</div>
+</div>
+<!-- Photography: Center Large -->
+<div class="px-6 md:px-24">
+<div class="relative aspect-[21/9] overflow-hidden bg-surface-container-highest mb-12">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="vast minimalist architectural landscape with clean sharp lines and dramatic shadows under a clear dark sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJv-Ur5dil9RBHBbmmz9ovNdaOapVUjzUVk279a2mo_md0IzoNqUYVqMVNkXkXvf0ngtEt69kDndQjsnoijJ2Qoc9HervbE2c4S1GaoBsVtM8aUw62A7YZkdfgwySnyF_iNZrTnVcWH4AuxAW8U8DqB3mvGbTjqKwm8YuZo8laWWW6Sb0VLb0VaHdrnU7z9lBYqelVOtCzE_xOEsEv6TghUw6Gf-aikj1Jd9eGSM-m83SBm2eMNFG6KoS94sZeVet7b3dHRsCo6j_j"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
+<span class="text-[10px] tracking-[0.5em] text-white/60 uppercase mb-6 block">03</span>
+<h4 class="text-6xl md:text-8xl serif-italic mb-8">Photography</h4>
+<a class="bg-white text-black px-12 py-4 text-[10px] tracking-[0.3em] uppercase hover:bg-neutral-200 transition-colors" href="#">Gallery</a>
+</div>
+</div>
+</div>
+<!-- Grid for the rest: Theater, Models, Engineering -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-24 px-6 md:px-12">
+<div class="flex flex-col">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover grayscale" data-alt="dramatic stage lighting hitting an empty theater chair in an old opulent opera house" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDNabTKB_8yoBj9xq5Kz3fshxt7fLt_TGtVfqv2fAZ7_Eu7IWS_7wux32JOwsc_woj5p5jEU5GpM5v8QZKi1DiRA1kNjgBg24h8esmjR8A6lEVJEszVHo6GhssuW22Kc-xMeRRN2FHL4gmeXD-5jA2Qz08XGrMy-fWzbEaOp3Hf5WLz0mKJiSUG4l8BP1sGDg997CqsrfV0NeqejNMTim8BR8UvHa5kOwL5IqeOLm6GuCxhxBvr1dQyuUSxFA5nt3Ig1b0kX88dSr-"/>
+</div>
+<span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">04</span>
+<h4 class="text-3xl serif-italic mb-4">Theatre</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Stage craft and performance art projects.</p>
+</div>
+<div class="flex flex-col mt-24">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover grayscale" data-alt="high fashion editorial close up of a model with sharp features and dramatic sculptural makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1hl9kzlfqPig4i0ecF-zth0Qi6CHtQ-LEkCagzwF78vnJFRyfzxhzywoRkZFtE2_t56OtyLVBJiBKNriNKfYje57v4nWh0pJg-2bV8SU-Xvrh3wlt9r6EVcR3cF-6DLRG2rWKfcj28nyP02Z29X9tEa6ZeXrFki6qPfbmsEZvzDZkdjCEohNRv8OjOqJTYcKhgXKlkbwW59o65AnrIkd7wTs2UAnSppsByrCBwO8gyeIf5S12gxpuMMyJmoJuzNoWOY4u3D9R0LkE"/>
+</div>
+<span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">05</span>
+<h4 class="text-3xl serif-italic mb-4">Modeling</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Editorial and sculptural form representation.</p>
+</div>
+<div class="flex flex-col">
+<div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8">
+<img class="w-full h-full object-cover grayscale" data-alt="close up of intricate mechanical clockwork or engineering blueprints with technical precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQv0kq3eBO5W0x9fVcx9GbwHxj-e-2iiHNZzj40YCS3cWzKVq0-uAnGfQbXeo1ZArbZzSlhSZJEbFoWttDws7e-D0oMoY-8UBg2NF1_x9uR2cZkDHffsz1CU2qxY51br6IFCJzzdpYlNkR0O80JoriCOgfmODZKjg8TViUQyuC0Ng30oJkiaA2Gl2dnPaQH_p1pV41RlTZazpyazFeBopU1ylYrhZGiJFAKt_NtQV4azvxd0aC9LNX39CxvJzQuTI4ZiyHG0LdgnBC"/>
+</div>
+<span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">06</span>
+<h4 class="text-3xl serif-italic mb-4">Engineering</h4>
+<p class="text-on-surface-variant text-sm font-light leading-relaxed">Structural design and kinetic installation mechanics.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-64 px-6 md:px-12 text-center bg-surface-container-lowest">
+<h2 class="text-5xl md:text-8xl serif-italic mb-12 max-w-5xl mx-auto leading-tight">Interested in collaborating on a <span class="opacity-40 italic">vision?</span></h2>
+<a class="inline-flex items-center gap-4 group" href="mailto:hello@thecurator.com">
+<span class="text-xl md:text-2xl font-light tracking-widest uppercase border-b border-white/40 pb-2 group-hover:border-white transition-all">Get in touch</span>
+<span class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</a>
+</section>
+<!-- Footer -->
+<footer class="w-full py-24 px-6 md:px-12 bg-neutral-900 dark:bg-[#131313] flex flex-col md:flex-row justify-between items-end w-full">
+<div class="flex flex-col gap-8 w-full md:w-auto mb-12 md:mb-0">
+<div class="text-[10px] tracking-[0.5em] uppercase text-white font-sans Newsreader italic text-lg">THE CURATOR</div>
+<p class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 max-w-xs">
+                A creative studio dedicated to the exploration of multidisciplinary art and architectural movement.
+            </p>
+</div>
+<div class="flex flex-col items-end gap-12 w-full md:w-auto">
+<div class="flex gap-12">
+<a class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 hover:text-white transition-colors duration-300" href="#">Spotify</a>
+<a class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 hover:text-white transition-colors duration-300" href="#">YouTube</a>
+<a class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 hover:text-white transition-colors duration-300" href="#">Instagram</a>
+</div>
+<p class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40">
+                © 2024 ARTIST COLLECTIVE. ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+</body></html>

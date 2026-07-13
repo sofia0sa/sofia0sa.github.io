@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Inter:wght@200;300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1b1c1c",
+              "outline": "#8e9192",
+              "inverse-surface": "#e5e2e1",
+              "tertiary": "#ffffff",
+              "secondary-fixed-dim": "#c7c6c6",
+              "on-secondary": "#303031",
+              "secondary-fixed": "#e3e2e2",
+              "on-surface": "#e5e2e1",
+              "on-tertiary": "#303030",
+              "inverse-primary": "#5d5f5f",
+              "inverse-on-surface": "#313030",
+              "background": "#131313",
+              "error-container": "#93000a",
+              "on-surface-variant": "#c4c7c8",
+              "secondary-container": "#464747",
+              "on-tertiary-container": "#656464",
+              "surface-tint": "#c6c6c7",
+              "primary-fixed-dim": "#c6c6c7",
+              "surface-variant": "#353535",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "primary": "#ffffff",
+              "on-primary-fixed-variant": "#454747",
+              "tertiary-fixed-dim": "#c8c6c6",
+              "on-background": "#e5e2e1",
+              "on-secondary-fixed-variant": "#464747",
+              "surface-dim": "#131313",
+              "on-primary-fixed": "#1a1c1c",
+              "primary-fixed": "#e2e2e2",
+              "on-tertiary-fixed-variant": "#474747",
+              "surface-container-highest": "#353535",
+              "error": "#ffb4ab",
+              "surface": "#131313",
+              "surface-bright": "#393939",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed": "#e4e2e1",
+              "on-primary-container": "#636565",
+              "secondary": "#c7c6c6",
+              "tertiary-container": "#e4e2e1",
+              "primary-container": "#e2e2e2",
+              "outline-variant": "#444748",
+              "on-secondary-container": "#b5b5b5",
+              "surface-container": "#20201f",
+              "surface-container-low": "#1c1b1b",
+              "on-primary": "#2f3131",
+              "surface-container-high": "#2a2a2a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131313;
+        color: #e5e2e1;
+        font-family: 'Inter', sans-serif;
+      }
+      .font-serif-italic {
+        font-family: 'Newsreader', serif;
+        font-style: italic;
+      }
+      .ghost-border {
+        border: 1px solid rgba(68, 71, 72, 0.15);
+      }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-8 bg-transparent backdrop-blur-xl">
+<div class="text-2xl font-light tracking-[0.3em] uppercase text-white font-headline">THE CURATOR</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="../home_l_espace_galerie/code.html">Home</a>
+<a class="text-white font-medium border-b border-white/40 pb-1 font-serif italic tracking-tighter Newsreader" href="../music_l_espace_galerie/code.html">Music</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="../dance_l_espace_galerie/code.html">Dance</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="#">Theatre</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="#">Photo</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="#">Models</a>
+<a class="text-white/60 font-light hover:text-white transition-colors font-serif italic tracking-tighter Newsreader" href="../engineering_contact_l_espace_galerie/code.html">Contact</a>
+</div>
+</nav>
+<main class="pt-48 pb-24">
+<!-- Hero / Title -->
+<header class="px-12 mb-32">
+<h1 class="text-[8rem] md:text-[12rem] font-headline font-light italic leading-none tracking-tighter -ml-2">Music.</h1>
+<div class="flex justify-end mt-4">
+<p class="max-w-md text-sm font-light tracking-widest uppercase leading-relaxed text-on-surface-variant opacity-70">
+                A sonic exploration of texture, rhythm, and human resonance. From the ivory of the grand piano to the complex architecture of electronic production.
+              </p>
+</div>
+</header>
+<!-- Section: Music Production -->
+<section class="mb-64 px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 items-end mb-16">
+<div class="md:col-span-8">
+<span class="label-sm tracking-[0.3em] uppercase text-xs opacity-50 mb-4 block">Section 01</span>
+<h2 class="text-6xl font-headline italic tracking-tighter mb-8">Music Production</h2>
+</div>
+</div>
+<div class="relative w-full aspect-[21/9] overflow-hidden bg-surface-container-low mb-12">
+<img class="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-1000" data-alt="dramatic wide shot of a professional music studio with modular synthesizers and warm ambient lighting in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5iZ4fYuF3vTmxKFdfsgWbw595gphOGE5d9CzMrvW--f8ohWM7Zf224ouHBy-2EiqLG3cS0w7b80o16LGOALIkafiYuMoWNMl4iMWcKp7lfizvd1-x3VkrL38zIvF7kpwRvZbZA6wV8g49CJ7FmaZuNTYZ_nDGd4UCTuT8N_jabKpSv80vF6jXnkNVQ13Dh2YK5UKO2wbNWZXdeKdFY7kIpR0lYJFP1Z9MolaYLgmJ-TZ96JC-9T63MFJngvfg76cO7SBF3QQHj01q"/>
+<div class="absolute bottom-8 right-12 text-right">
+<span class="text-[10px] tracking-[0.4em] uppercase font-body text-white/50">Berlin Sessions / 2024</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+<div class="space-y-6">
+<h3 class="text-2xl font-headline italic tracking-tighter">Atmospheric Layers</h3>
+<p class="text-sm font-light leading-relaxed text-on-surface-variant">Focusing on cinematic soundscapes that blur the line between organic instrumentation and digital synthesis. Each track is an environment to be inhabited.</p>
+</div>
+<div class="md:col-span-2">
+<div class="w-full aspect-video bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="close-up of a producer's hand adjusting faders on a large high-end mixing console in a dimly lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfEszGwoq4VajoE6KdhaMDlNNiG_DXykqBfmxg6kNynf27Eo4DLXjdG2h8pSZGvpyXrT9q0BNCjyaeDPsTjyGjOH6eqiUQEgx6OeV8-ysBWw6waPX6v0nBuStbYr1mNx9CPSW8vrix1A4tfXLP0-q04TRuIXE6iILaCaaAuvt7Ov9zNhAkfAcCmtcXEBD0Y1tXcNE3neZmSN7yIFqtTssLbDhYmb2aq5INdTD8ed8qvmoN_8g8ozanJUOxSt55_r8O7Nb4ACaXiL2H"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Songwriting -->
+<section class="mb-64 bg-surface-container-low py-32">
+<div class="px-12 grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-4 flex flex-col justify-between">
+<div>
+<span class="label-sm tracking-[0.3em] uppercase text-xs opacity-50 mb-4 block">Section 02</span>
+<h2 class="text-6xl font-headline italic tracking-tighter mb-12">Songwriting</h2>
+<p class="text-sm font-light leading-relaxed text-on-surface-variant max-w-xs mb-8">
+                            The narrative core. Words and melodies crafted to capture the fleeting moments of the human experience.
+                        </p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+<span class="text-[10px] tracking-widest uppercase border-b border-transparent group-hover:border-white transition-all">Listen on Spotify</span>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<span class="material-symbols-outlined text-sm">movie</span>
+<span class="text-[10px] tracking-widest uppercase border-b border-transparent group-hover:border-white transition-all">Watch on YouTube</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Placeholder for Spotify/Media -->
+<div class="aspect-square bg-surface-container-highest flex flex-col justify-center items-center p-12 text-center group relative cursor-pointer">
+<div class="absolute inset-0 opacity-20 transition-opacity group-hover:opacity-40">
+<img class="w-full h-full object-cover" data-alt="blurred neon lights reflecting on a rainy window at night create an abstract bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALQ-ZxEUvar0lbvoq523_Qte2rUbAIQvNe2XOYsl_Kzs0SQLxD41Tbck5gxd-_m88LsQMbFJPowYYmqVtjG9J07jSXEjBm9dj-P8yoyIyqiuZaCi8JyEwPz87_D4HYdmenabLyAbzJTE32TxjrdEoyq7WnkiI_uiTI3nFm12LPx7y8rtGA8YsPVZWHpQArfldobvvw_cneP-qRAO1s_MAeKe_rnukmGA5R_h39r0cMQugWrjS2zER7wWcmbphisXt25oVfK59PJ2jW"/>
+</div>
+<span class="relative z-10 text-[10px] tracking-widest uppercase mb-4 text-white/40">Latest Release</span>
+<h4 class="relative z-10 text-3xl font-headline italic mb-2">Ethereal Blue</h4>
+<span class="relative z-10 material-symbols-outlined text-4xl mt-6 opacity-0 group-hover:opacity-100 transition-opacity">headphones</span>
+</div>
+<div class="aspect-square bg-surface-container-highest flex flex-col justify-center items-center p-12 text-center group relative cursor-pointer">
+<div class="absolute inset-0 opacity-20 transition-opacity group-hover:opacity-40">
+<img class="w-full h-full object-cover" data-alt="black and white moody portrait of a singer in front of a microphone with hazy studio lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOBP20Iep64zUdxW54MWHDQ3mnqiB-6dvwGzwS7qmJTgf0XxpUvl5QV9Dw10rZ8-LxR01GUe7Sp9cHCkmdkfC10Re-gI3m1OxED2yKAqKjB4kJisGa1ip87ztlmmBOO94fXa3YrjFqLNKgphTlZk3GNCYA1081ePXFUyVwjpUiaZCzCKEyCOxHaROXHZC-DGwwTnGbi93-4YKyWhh7MFlNuRejO_005bgVcGWSv58GiEOQgvoiartnSlRP3mKCr1DSzM26lSkYMpmp"/>
+</div>
+<span class="relative z-10 text-[10px] tracking-widest uppercase mb-4 text-white/40">Official Video</span>
+<h4 class="relative z-10 text-3xl font-headline italic mb-2">The Long Goodbye</h4>
+<span class="relative z-10 material-symbols-outlined text-4xl mt-6 opacity-0 group-hover:opacity-100 transition-opacity">play_circle</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Piano & Singing -->
+<section class="mb-64 px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+<div class="space-y-16">
+<div>
+<span class="label-sm tracking-[0.3em] uppercase text-xs opacity-50 mb-4 block">Section 03</span>
+<h2 class="text-6xl font-headline italic tracking-tighter mb-8">Piano</h2>
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover filter sepia-[0.3]" data-alt="minimalist overhead shot of piano keys with elegant shadows and soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJsBACZmTosbrIW4RIUQ0WJNj_d-ijZE1G_FRDBOEUIutJ7okkyZeLtGLetXku4GKGii-XaAyqXE7RhhfHQAR2WyEXWkZLAjeQDzanRMTOBos5NFrFFpxnPydaXgyPV1whIjTFDOYz6jhIRdNwSbCt_D_bRP1cRLzXkLj_hqyqSpBe2iJTx4nch5F5J0dUvxg10PE6_XmweWpqpX00gTjAitfHg0T-bKKiwpcPjBBVAt9uHyzERSJJq3gEH1y-mtZskxZxRfM0fNt2"/>
+</div>
+<p class="mt-8 text-sm font-light leading-relaxed text-on-surface-variant max-w-sm">
+                            Classical foundation meets contemporary improvisation. The piano remains my primary vessel for emotional expression and composition.
+                        </p>
+</div>
+</div>
+<div class="space-y-16 pt-32">
+<div>
+<span class="label-sm tracking-[0.3em] uppercase text-xs opacity-50 mb-4 block">Section 04</span>
+<h2 class="text-6xl font-headline italic tracking-tighter mb-8">Singing</h2>
+<div class="w-full aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="artistic silhouette of a vocalist performing under a single spotlight with visible smoke in the air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiqpY5R24-4o-3KrNabIAnrsdYdMREzVNdfcJf2_c8d4KG8ez5bhGDfh5mFCJdO5qU0UH4vbmk3cCKjjWe9fC-gaaUlZG7y6NVKqdENfv_QYXdfToUMqgcG3v764bHr689MAQRQmjan67wiOubOd95OaGGszHflKNz-XpdJV4rpfkzdTEE0UwWkol6-yKYkTzO3vg8RHBSw4stnripxYyWZgkxqbrNZ8hwsN3ik4Dfh3xGbIMfi2yofMxSy4QSYjUM37J79xOcxDeV"/>
+</div>
+<p class="mt-8 text-sm font-light leading-relaxed text-on-surface-variant max-w-sm">
+                            Vocal textures ranging from intimate whispers to resonant soul. Exploring the voice as both a storyteller and an instrument.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Other Instruments (Bento Style) -->
+<section class="mb-64 px-12">
+<span class="label-sm tracking-[0.3em] uppercase text-xs opacity-50 mb-4 block">Section 05</span>
+<h2 class="text-6xl font-headline italic tracking-tighter mb-16">Other Instruments</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-surface-container-low h-[400px] relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" data-alt="collection of vintage electric guitars hanging on a dark textured wall with subtle gold accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8DTGyT_lenRZ6sL0JCTVJ6hcFjx0TTRbG0R5TV3r-AUx9XbUJBAIXwsDAK_hZ6DtFjnqo0EkEk2B6iW8Pc7Nm0VXXgYlnxwFq5tD7BJIkD36nYJ05sEP02pDQYK1EkEYXNxcATuHuEqvlwcjvsIw49-t5e6bvv0FMb6FeBKc-tJJUTuhGWl-MQ8dA1XEL5Hgl6WpcCjGwecnfsESG3EreRaDA6lGq8wEEJMz9oL7cR1N9kolfNHcHuPNtEYxZmFc-9FVITrzfSHGB"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end">
+<h3 class="text-3xl font-headline italic">Guitar</h3>
+<p class="text-[10px] tracking-widest uppercase text-white/50 mt-2">Acoustic &amp; Electric Explorations</p>
+</div>
+</div>
+<div class="bg-surface-container-low h-[400px] relative overflow-hidden group">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" data-alt="close-up of a drum kit focus on the snare and hi-hat in a high-contrast black and white style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgiPX-PBdFMfuR6IwETVb9fuapcY4qc9FuEaIIRYwg2khuS99gTy8fp7mcyjqMtkB-ithlLqs8uGeluco_oixpPfs_74R3ogrObKLyiLMJ0Oicz3TMCFOKO_6pZ8VtYndF381DmgSYUf7IfdfLyCdWK_-m5kl2kbAd9jCXuBQI2-ezQftnUJoJj0TAX5Pth62aAq-6TN6HvcsEtTliTH2VkFsS7f4IEayGm3z45O9LKyjJ3CUgzbH-qzF0foGt0Vtr-TpEFXRKvORu"/>
+<div class="absolute inset-0 p-12 flex flex-col justify-end">
+<h3 class="text-3xl font-headline italic">Drums</h3>
+<p class="text-[10px] tracking-widest uppercase text-white/50 mt-2">Rhythmic Foundation</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA / Contact Anchor -->
+<section class="mb-32 px-12 text-center">
+<h2 class="text-[5rem] font-headline italic tracking-tighter mb-12">Collaborate?</h2>
+<div class="flex justify-center">
+<a class="px-16 py-6 bg-primary text-on-primary text-[10px] tracking-[0.4em] uppercase hover:bg-primary-fixed-dim transition-colors" href="#">Get in touch</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 px-12 bg-neutral-900 dark:bg-[#131313] flex flex-col md:flex-row justify-between items-end">
+<div class="mb-8 md:mb-0">
+<p class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40">© 2024 ARTIST COLLECTIVE. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 hover:text-white transition-colors duration-300" href="#">Spotify</a>
+<a class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 hover:text-white transition-colors duration-300" href="#">YouTube</a>
+<a class="font-sans tracking-widest text-[10px] uppercase Inter text-white/40 hover:text-white transition-colors duration-300" href="#">Instagram</a>
+</div>
+</footer>
+</body></html>

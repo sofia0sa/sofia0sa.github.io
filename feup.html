@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sofia Sá — Engenharia Informática · FEUP</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="./assets/site/tw-config.js"></script>
+<link href="./assets/site/site.css" rel="stylesheet"/>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<div id="site-navbar"></div>
+<script src="./navbar-loader.js" defer></script>
+
+<!-- HERO -->
+<header class="relative overflow-hidden px-6 md:px-12 pt-40 md:pt-48 pb-20 md:pb-28 mb-20 md:mb-32">
+  <div class="hero-v2-bg">
+    <img class="hero-v2-img" src="assets/images/fotos_feup/traje1.JPEG" alt=""/>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/55"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-screen-2xl mx-auto flex flex-col md:flex-row items-end justify-between gap-12">
+    <div class="max-w-4xl"><h1 class="page-title">FEUP</h1></div>
+    <div class="md:w-1/3 text-right">
+      <p class="eyebrow mb-4">Faculdade de Engenharia da U. Porto</p>
+      <p class="text-sm leading-relaxed text-on-surface-variant font-light">
+        Licenciatura em Engenharia Informática e Computação, a par do meu percurso artístico. Um contraponto de rigor e lógica que complementa a minha criatividade.
+      </p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- MÉDIA DESTACADA -->
+  <section class="px-6 md:px-12 py-20 md:py-28 border-t border-surface-container">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="md:col-span-1 bg-surface-container-low border border-white/8 p-10 flex flex-col justify-between min-h-[240px] reveal">
+        <p class="eyebrow">Média do curso</p>
+        <div>
+          <span class="font-headline italic text-white leading-none" style="font-size:clamp(4.5rem,9vw,7rem);" data-placeholder="Substituir pela média">18,0</span>
+          <span class="font-headline italic text-white/40 text-3xl">/20</span>
+        </div>
+      </div>
+      <div class="bg-surface-container-low border border-white/8 p-10 flex flex-col justify-between min-h-[240px] reveal" data-reveal-delay="80">
+        <p class="eyebrow">Grau</p>
+        <p class="font-headline italic text-white text-2xl md:text-3xl leading-snug">Licenciatura em Engenharia Informática e Computação</p>
+      </div>
+      <div class="bg-surface-container-low border border-white/8 p-10 flex flex-col justify-between min-h-[240px] reveal" data-reveal-delay="160">
+        <p class="eyebrow">Continuação</p>
+        <p class="font-headline italic text-white text-2xl md:text-3xl leading-snug">Mestrado em Engenharia de Serviços e Gestão</p>
+      </div>
+    </div>
+    <p class="mt-4 text-[10px] tracking-[0.2em] uppercase text-white/25">Faculdade de Engenharia da Universidade do Porto</p>
+  </section>
+
+  <!-- NOTAS POR ANO -->
+  <section class="px-6 md:px-12 py-20 md:py-28 bg-surface-container border-t border-surface-container-high">
+    <div class="max-w-3xl mb-14 reveal">
+      <span class="eyebrow block mb-4">Licenciatura · Percurso académico</span>
+      <h2 class="text-4xl md:text-6xl font-headline italic tracking-tighter">Notas por ano</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-16">
+    <!-- 1º Ano -->
+    <div class="reveal">
+      <div class="flex items-baseline justify-between mb-6">
+        <h3 class="text-xl font-headline italic text-white/80">1.º Ano <span class="text-white/35 text-sm not-italic">· 2021/2022</span></h3>
+      </div>
+      <div class="divide-y divide-white/10 border-t border-white/10">
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Álgebra Linear e Geometria Analítica <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Análise Matemática I <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Fundamentos da Programação <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Fundamentos de Sistemas Computacionais <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Matemática Discreta <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">16</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Projeto UP <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">14</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Análise Matemática II <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Arquitetura de Computadores <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Física I <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Programação <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Teoria da Computação <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">16</span></div>
+      </div>
+    </div>
+
+    <!-- 2º Ano -->
+    <div class="reveal" data-reveal-delay="80">
+      <div class="flex items-baseline justify-between mb-6">
+        <h3 class="text-xl font-headline italic text-white/80">2.º Ano <span class="text-white/35 text-sm not-italic">· 2022/2023</span></h3>
+      </div>
+      <div class="divide-y divide-white/10 border-t border-white/10">
+        <div class="flex items-center justify-between gap-6 py-3">
+          <span class="text-sm font-light">Algoritmos e Estruturas de Dados <span class="text-white/35 text-xs">· 1.º sem</span></span>
+          <div class="flex items-center gap-5">
+            <a href="https://github.com/sofia0sa/y2s1-AED-proj1" target="_blank" rel="noopener" class="text-[10px] tracking-[0.15em] uppercase text-white/45 hover:text-white transition-colors">P1 ↗</a>
+            <a href="https://github.com/sofia0sa/y2s1-AED-proj2" target="_blank" rel="noopener" class="text-[10px] tracking-[0.15em] uppercase text-white/45 hover:text-white transition-colors">P2 ↗</a>
+            <span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-6 py-3">
+          <span class="text-sm font-light">Bases de Dados <span class="text-white/35 text-xs">· 1.º sem</span></span>
+          <div class="flex items-center gap-5">
+            <a href="https://github.com/sofia0sa/y2s1-BD-proj" target="_blank" rel="noopener" class="text-[10px] tracking-[0.15em] uppercase text-white/45 hover:text-white transition-colors">Projeto ↗</a>
+            <span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Física II <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">19</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Introdução à Análise de Dados em Excel <span class="text-white/35 text-xs">· 1.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">20</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Laboratório de Desenho e Teste de Software <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Sistemas Operativos <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Competências Transversais: Comunicação Profissional <span class="text-white/35 text-xs">· 2.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">19</span></div>
+        <div class="flex items-center justify-between gap-6 py-3">
+          <span class="text-sm font-light">Desenho de Algoritmos <span class="text-white/35 text-xs">· 2.º sem</span></span>
+          <div class="flex items-center gap-5">
+            <a href="https://github.com/sofia0sa/y2s2-DA-proj1" target="_blank" rel="noopener" class="text-[10px] tracking-[0.15em] uppercase text-white/45 hover:text-white transition-colors">Projeto ↗</a>
+            <span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Engenharia de Software <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Laboratório de Computadores <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">19</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Linguagens e Tecnologias Web <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Métodos Estatísticos <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+      </div>
+    </div>
+
+    <!-- 3º Ano -->
+    <div class="reveal" data-reveal-delay="160">
+      <div class="flex items-baseline justify-between mb-6">
+        <h3 class="text-xl font-headline italic text-white/80">3.º Ano <span class="text-white/35 text-sm not-italic">· 2023/2024</span></h3>
+      </div>
+      <div class="divide-y divide-white/10 border-t border-white/10">
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Empregabilidade ao Longo da Vida <span class="text-white/35 text-xs">· 1.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">20</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Fundamentos de Segurança Informática <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Interação Pessoa Computador <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Laboratório de Bases de Dados e Aplicações Web <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3">
+          <span class="text-sm font-light">Programação Funcional e em Lógica <span class="text-white/35 text-xs">· 1.º sem</span></span>
+          <div class="flex items-center gap-5">
+            <a href="https://github.com/sofia0sa/y3s1-PFL-proj1" target="_blank" rel="noopener" class="text-[10px] tracking-[0.15em] uppercase text-white/45 hover:text-white transition-colors">P1 ↗</a>
+            <a href="https://github.com/sofia0sa/y3s1-PFL-proj2" target="_blank" rel="noopener" class="text-[10px] tracking-[0.15em] uppercase text-white/45 hover:text-white transition-colors">P2 ↗</a>
+            <span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Redes de Computadores <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">19</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Compiladores <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Computação Gráfica <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Computação Paralela e Distribuída <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Inteligência Artificial <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Projeto Integrador <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">19</span></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- MESTRADO -->
+  <section class="px-6 md:px-12 py-20 md:py-28 border-t border-surface-container">
+    <div class="max-w-3xl mb-14 reveal">
+      <span class="eyebrow block mb-4">2.º Ciclo · Em curso</span>
+      <h2 class="text-4xl md:text-6xl font-headline italic tracking-tighter mb-4">Mestrado</h2>
+      <p class="text-sm font-light leading-relaxed text-on-surface-variant">
+        Mestrado em Engenharia de Serviços e Gestão. Concluí o 1.º ano; o 2.º ano decorre em breve.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16">
+    <!-- 1º Ano do Mestrado -->
+    <div class="reveal">
+      <h3 class="text-xl font-headline italic text-white/80 mb-6">1.º Ano <span class="text-white/35 text-sm not-italic">· 2024/2025</span></h3>
+      <div class="divide-y divide-white/10 border-t border-white/10">
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Análise e Modelação de Processos <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Gestão de Serviços <span class="text-white/35 text-xs">· 1.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Interação Pessoa-Computador <span class="text-white/35 text-xs">· 1.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Psicologia Cognitiva <span class="text-white/35 text-xs">· 1.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Sistemas de Apoio à Decisão <span class="text-white/35 text-xs">· 1.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">17</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Design de Som para Media Digitais <span class="text-white/35 text-xs">· 2.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Gestão de Operações e Logística de Serviços <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">16</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Laboratório de Gestão de Projetos <span class="text-white/35 text-xs">· 2.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Marketing de Serviços <span class="text-white/35 text-xs">· 2.º sem</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+        <div class="flex items-center justify-between gap-6 py-3"><span class="text-sm font-light">Sistemas de Informação I <span class="text-white/35 text-xs">· 2.º sem · Opção</span></span><span class="text-sm tabular-nums text-white/70 w-8 text-right">18</span></div>
+      </div>
+    </div>
+
+    <!-- 2º Ano do Mestrado -->
+    <div class="reveal" data-reveal-delay="80">
+      <h3 class="text-xl font-headline italic text-white/80 mb-6">2.º Ano <span class="text-white/35 text-sm not-italic">· 2025/2026</span></h3>
+      <div class="border-t border-white/10 py-8">
+        <p class="text-sm font-light italic text-white/40">Em progresso.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS GITHUB -->
+  <section class="px-6 md:px-12 py-20 md:py-28 bg-surface-container border-t border-surface-container-high">
+    <div>
+      <div class="max-w-3xl mb-14 reveal">
+        <span class="eyebrow block mb-4">Código aberto</span>
+        <h2 class="text-4xl md:text-6xl font-headline italic tracking-tighter mb-4">Projetos no GitHub</h2>
+        <p class="text-sm font-light leading-relaxed text-on-surface-variant">Trabalhos práticos desenvolvidos ao longo do curso.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="https://github.com/sofia0sa/y2s1-AED-proj1" target="_blank" rel="noopener" class="doc-card group reveal">
+          <div class="doc-card-preview"><img src="https://opengraph.githubassets.com/1/sofia0sa/y2s1-AED-proj1" alt="" loading="lazy"/></div>
+          <div class="flex items-start justify-between"><span class="material-symbols-outlined">code</span><span class="material-symbols-outlined text-white/25 group-hover:text-white transition-colors" style="font-size:22px;">arrow_outward</span></div>
+          <div><p class="eyebrow mb-2">AED · 2.º ano</p><h4 class="text-xl font-headline italic text-white">Estruturas de Dados · Projeto 1</h4></div>
+        </a>
+        <a href="https://github.com/sofia0sa/y2s1-AED-proj2" target="_blank" rel="noopener" class="doc-card group reveal" data-reveal-delay="60">
+          <div class="doc-card-preview"><img src="https://opengraph.githubassets.com/1/sofia0sa/y2s1-AED-proj2" alt="" loading="lazy"/></div>
+          <div class="flex items-start justify-between"><span class="material-symbols-outlined">code</span><span class="material-symbols-outlined text-white/25 group-hover:text-white transition-colors" style="font-size:22px;">arrow_outward</span></div>
+          <div><p class="eyebrow mb-2">AED · 2.º ano</p><h4 class="text-xl font-headline italic text-white">Estruturas de Dados · Projeto 2</h4></div>
+        </a>
+        <a href="https://github.com/sofia0sa/y2s1-BD-proj" target="_blank" rel="noopener" class="doc-card group reveal" data-reveal-delay="120">
+          <div class="doc-card-preview"><img src="https://opengraph.githubassets.com/1/sofia0sa/y2s1-BD-proj" alt="" loading="lazy"/></div>
+          <div class="flex items-start justify-between"><span class="material-symbols-outlined">database</span><span class="material-symbols-outlined text-white/25 group-hover:text-white transition-colors" style="font-size:22px;">arrow_outward</span></div>
+          <div><p class="eyebrow mb-2">BD · 2.º ano</p><h4 class="text-xl font-headline italic text-white">Bases de Dados · Projeto</h4></div>
+        </a>
+        <a href="https://github.com/sofia0sa/y2s2-DA-proj1" target="_blank" rel="noopener" class="doc-card group reveal">
+          <div class="doc-card-preview"><img src="https://opengraph.githubassets.com/1/sofia0sa/y2s2-DA-proj1" alt="" loading="lazy"/></div>
+          <div class="flex items-start justify-between"><span class="material-symbols-outlined">account_tree</span><span class="material-symbols-outlined text-white/25 group-hover:text-white transition-colors" style="font-size:22px;">arrow_outward</span></div>
+          <div><p class="eyebrow mb-2">DA · 2.º ano</p><h4 class="text-xl font-headline italic text-white">Desenho de Algoritmos · Projeto 1</h4></div>
+        </a>
+        <a href="https://github.com/sofia0sa/y3s1-PFL-proj1" target="_blank" rel="noopener" class="doc-card group reveal" data-reveal-delay="60">
+          <div class="doc-card-preview"><img src="https://opengraph.githubassets.com/1/sofia0sa/y3s1-PFL-proj1" alt="" loading="lazy"/></div>
+          <div class="flex items-start justify-between"><span class="material-symbols-outlined">functions</span><span class="material-symbols-outlined text-white/25 group-hover:text-white transition-colors" style="font-size:22px;">arrow_outward</span></div>
+          <div><p class="eyebrow mb-2">PFL · 3.º ano</p><h4 class="text-xl font-headline italic text-white">Prog. Funcional e em Lógica · P1</h4></div>
+        </a>
+        <a href="https://github.com/sofia0sa/y3s1-PFL-proj2" target="_blank" rel="noopener" class="doc-card group reveal" data-reveal-delay="120">
+          <div class="doc-card-preview"><img src="https://opengraph.githubassets.com/1/sofia0sa/y3s1-PFL-proj2" alt="" loading="lazy"/></div>
+          <div class="flex items-start justify-between"><span class="material-symbols-outlined">functions</span><span class="material-symbols-outlined text-white/25 group-hover:text-white transition-colors" style="font-size:22px;">arrow_outward</span></div>
+          <div><p class="eyebrow mb-2">PFL · 3.º ano</p><h4 class="text-xl font-headline italic text-white">Prog. Funcional e em Lógica · P2</h4></div>
+        </a>
+      </div>
+      <div class="mt-8 reveal">
+        <a href="https://github.com/sofia0sa" target="_blank" rel="noopener" class="inline-flex items-center gap-3 text-[11px] tracking-[0.25em] uppercase border-b border-white/30 pb-1 hover:border-white transition-colors">
+          Ver perfil no GitHub <span class="material-symbols-outlined" style="font-size:18px;">arrow_right_alt</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENVOLVIMENTO -->
+  <section class="px-6 md:px-12 py-20 md:py-28 border-t border-surface-container">
+    <div class="max-w-3xl mb-14 reveal">
+      <span class="eyebrow block mb-4">Vida académica</span>
+      <h2 class="text-4xl md:text-6xl font-headline italic tracking-tighter">Envolvimento</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+      <div class="md:col-span-2 border border-white/8 bg-surface-container-low p-10 reveal">
+        <div class="aspect-video overflow-hidden mb-6 -mt-2"><img class="w-full h-full object-cover" src="assets/images/NIAEFEUP/ni1.JPG" alt="Núcleo de Informática da FEUP"/></div>
+        <span class="material-symbols-outlined text-white/35 text-4xl mb-6">groups</span>
+        <h3 class="text-2xl md:text-3xl font-headline italic text-white mb-4">Núcleo de Informática</h3>
+        <p class="text-sm font-light leading-relaxed text-on-surface-variant" data-placeholder="| Fotografia da Gala de Informática 2024, organizada por mim e pela equipa de organização de eventos">
+          Participo no Núcleo de Informática da FEUP, colaborando em atividades, eventos e projetos que ligam os estudantes de informática. <br> <span class="text-white/40">Fotografia da Gala de Informática 2024, organizada por mim e pela equipa de organização de eventos.</span>
+        </p>
+      </div>
+      <div class="md:col-span-3 flex flex-col gap-6">
+        <div class="border border-white/8 bg-surface-container-low p-10 reveal" data-reveal-delay="80">
+          <span class="material-symbols-outlined text-white/35 text-4xl mb-6">diversity_3</span>
+          <h3 class="text-2xl md:text-3xl font-headline italic text-white mb-4">Associação de Estudantes</h3>
+          <p class="text-sm font-light leading-relaxed text-on-surface-variant">
+            Fiz parte dos departamentos de Comunicação, Marketing e Imagem, e de Saúde e Bem-Estar da Associação de Estudantes da FEUP, participando em vários eventos organizados pela associação.
+          </p>
+        </div>
+        <div class="border border-white/8 bg-surface-container-low p-10 reveal" data-reveal-delay="160">
+          <span class="material-symbols-outlined text-white/35 text-4xl mb-6">event</span>
+          <h3 class="text-2xl md:text-3xl font-headline italic text-white mb-4">Centro de Eventos</h3>
+          <p class="text-sm font-light leading-relaxed text-on-surface-variant mb-6">
+            Trabalhei como técnica e hospedeira no Centro de Eventos, dando apoio em diversos eventos de todos os géneros — desde eventos académicos a eventos artísticos, de desporto, empresariais, entre outros.
+          </p>
+          <div class="grid grid-cols-4 gap-3">
+            <div class="aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="assets/images/CE/ce2.jpg" alt="Centro de Eventos"/></div>
+            <div class="aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="assets/images/CE/ce3.jpg" alt="Centro de Eventos"/></div>
+            <div class="aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="assets/images/CE/ce5.jpg" alt="Centro de Eventos"/></div>
+            <div class="aspect-square overflow-hidden"><img class="w-full h-full object-cover" src="assets/images/CE/ce6.jpg" alt="Centro de Eventos"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS ACADÉMICOS -->
+  <section id="resultados-academicos" class="px-6 md:px-12 py-20 md:py-28 bg-surface-container border-t border-surface-container-high scroll-mt-28">
+    <div class="max-w-3xl mb-14 reveal">
+      <span class="eyebrow block mb-4">Percurso escolar</span>
+      <h2 class="text-4xl md:text-6xl font-headline italic tracking-tighter mb-6">Outros Resultados Académicos</h2>
+      <p class="text-sm font-light leading-relaxed text-on-surface-variant">
+        Certificados e prémios do percurso escolar, anteriores à FEUP — exames, quadros de honra e concursos.
+      </p>
+    </div>
+    <div class="diploma-grid">
+      <a href="assets/images/pdf_previews/escola/examesnacionais.jpg" class="diploma-card v group reveal">
+        <img src="assets/images/pdf_previews/escola/examesnacionais.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Exames Nacionais do Ensino Secundário</span><span class="dip-path">2021</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/exameingles1.jpg" class="diploma-card v group reveal" data-reveal-delay="60">
+        <img src="assets/images/pdf_previews/escola/exameingles1.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Certificate in Advanced English — Grade B (C1)</span><span class="dip-path">Cambridge · 2021</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/certificadoISC.jpg" class="diploma-card v group reveal" data-reveal-delay="120">
+        <img src="assets/images/pdf_previews/escola/certificadoISC.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">English Advanced — Haileybury College</span><span class="dip-path">2019</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/certificadoISC2.jpg" class="diploma-card v group reveal">
+        <img src="assets/images/pdf_previews/escola/certificadoISC2.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Student Progress Report — Haileybury College</span><span class="dip-path">2019</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/quadrohonra1.jpg" class="diploma-card h group reveal">
+        <img src="assets/images/pdf_previews/escola/quadrohonra1.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Quadro de Honra — E.B. Comendador Ângelo Azevedo</span><span class="dip-path">2013/2014</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/quadrohonra2.jpg" class="diploma-card h group reveal" data-reveal-delay="60">
+        <img src="assets/images/pdf_previews/escola/quadrohonra2.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Quadro de Valor — E.B. Comendador Ângelo Azevedo</span><span class="dip-path">2012/2013</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/premioexcelencia1718.jpg" class="diploma-card h group reveal" data-reveal-delay="120">
+        <img src="assets/images/pdf_previews/escola/premioexcelencia1718.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Prémio de Excelência — Agrupamento Oliveira Júnior</span><span class="dip-path">2017/2018</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/premioexcelencia1819.jpg" class="diploma-card v group reveal">
+        <img src="assets/images/pdf_previews/escola/premioexcelencia1819.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Prémio de Excelência — Agrupamento Oliveira Júnior</span><span class="dip-path">2018/2019</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/premioexcelencia1920.jpg" class="diploma-card v group reveal" data-reveal-delay="60">
+        <img src="assets/images/pdf_previews/escola/premioexcelencia1920.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Prémio de Excelência — Agrupamento Oliveira Júnior</span><span class="dip-path">2019/2020</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/concursopoesia.jpg" class="diploma-card v group reveal" data-reveal-delay="120">
+        <img src="assets/images/pdf_previews/escola/concursopoesia.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">XV Concurso de Poesia Agostinho Gomes</span><span class="dip-path">2014</span>
+      </a>
+      <a href="assets/images/pdf_previews/escola/parlamentojovens.jpg" class="diploma-card h group reveal">
+        <img src="assets/images/pdf_previews/escola/parlamentojovens.jpg" alt=""/><span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">workspace_premium</span><span class="dip-title">Parlamento dos Jovens — Deputada Eleita</span><span class="dip-path">2018/2019</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOTOGRAFIAS -->
+  <section class="px-6 md:px-12 py-20 md:py-28 border-t border-surface-container">
+    <div class="max-w-3xl mb-12 reveal">
+      <span class="eyebrow block mb-4">Momentos</span>
+      <h2 class="text-4xl md:text-6xl font-headline italic tracking-tighter">Fotografias</h2>
+    </div>
+    <div class="tile-grid">
+      <div class="photo-card"><img src="assets/images/fotos_feup/traje1.JPEG" alt="FEUP — traje académico"/></div>
+      <div class="photo-card"><img src="assets/images/fotos_feup/traje2.jpeg" alt="FEUP — traje académico"/></div>
+      <div class="photo-card"><img src="assets/images/fotos_feup/cortejo.jpeg" alt="FEUP — cortejo"/></div>
+      <div class="photo-card"><img src="assets/images/fotos_feup/diretorfeup.jpeg" alt="FEUP — diretor"/></div>
+      <div class="photo-card"><img src="assets/images/fotos_feup/cortejoamigos.JPG" alt="FEUP — cortejo com amigos"/></div>
+      <div class="photo-card"><img src="assets/images/fotos_feup/salomecortejo.JPG" alt="FEUP — cortejo"/></div>
+      <div class="photo-card"><img src="assets/images/NIAEFEUP/ni2.JPG" alt="Núcleo de Informática da FEUP"/></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+<script src="./footer-loader.js" defer></script>
+<script src="./assets/site/enhance.js" defer></script>
+</body>
+</html>

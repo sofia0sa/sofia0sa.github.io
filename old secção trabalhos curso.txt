@@ -1,0 +1,234 @@
+<section class="mt-40 border-t border-white/10 pt-24">
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-20">
+
+    <!-- TEXTO -->
+    <div class="lg:col-span-4">
+
+      <span class="text-xs uppercase tracking-[0.3em] opacity-50 block mb-4">
+        Arquivo
+      </span>
+
+      <h3 class="text-4xl font-headline italic tracking-tighter mb-8">
+        Trabalhos do Curso
+      </h3>
+
+      <p class="text-sm font-light leading-relaxed text-on-surface-variant">
+        Seleção de projetos desenvolvidos durante o curso de Produção Musical
+        na Rockschool Porto, abrangendo produção, mistura, design de som,
+        composição e criação musical.
+      </p>
+
+    </div>
+
+    <!-- COLUNA DIREITA -->
+    <div class="lg:col-span-8 space-y-20">
+
+            <!-- DESIGN DE SOM -->
+      <div>
+
+        <h4 class="text-xl font-headline italic mb-8">
+          Design de Som
+        </h4>
+
+        <div class="divide-y divide-white/10">
+
+          <!-- vídeo -->
+          <div class="py-6">
+
+            <p class="text-sm mb-4">
+              Projeto Final
+            </p>
+
+            <video controls class="w-full rounded-lg">
+              <source src="assets/trabalhos_rockschool/design_som/SOFIA SÁ (Design de Som) - Projeto Final.mov">
+            </video>
+
+          </div>
+
+          <div class="py-6">
+
+            <p class="text-sm mb-4">
+              Ex Monster Inc
+            </p>
+
+            <video controls class="w-full rounded-lg">
+              <source src="assets/trabalhos_rockschool/design_som/Sofia Sá - Ex Monster Inc - Intro.mov">
+            </video>
+
+          </div>
+
+          <div class="py-6">
+
+            <p class="text-sm mb-4">
+              Rockschool Exercise
+            </p>
+
+            <video controls class="w-full rounded-lg">
+              <source src="assets/trabalhos_rockschool/design_som/Sofia Sá ex1 - Design de Som Rockschool.mov">
+            </video>
+
+          </div>
+
+          <div class="py-6">
+
+            <p class="text-sm mb-4">
+              Super Mario Bros
+            </p>
+
+            <video controls class="w-full rounded-lg">
+              <source src="assets/trabalhos_rockschool/design_som/Sofia Sá Sfx+Music EX: SUPER MARIO BROS.mov">
+            </video>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- MISTURAS -->
+    <div>
+
+      <h4 class="text-xl font-headline italic mb-8">
+        Misturas
+      </h4>
+
+    <div class="space-y-8">
+      
+    </div>
+
+    <div>
+
+      <div class="flex justify-between mb-3">
+
+        <span class="text-sm">
+        Michael Jackson — <em>Billie Jean (Soundalike Mix)</em>
+        </span>
+
+    </div>
+
+    <audio controls class="w-full">
+      <source src="assets/trabalhos_rockschool/misturas/SOFIA SÁ - MJ Billie Jean (Soundalike MIX)_vfinal.wav">
+    </audio>
+
+    </div>
+    </div>
+    
+
+      <!-- PRODUÇÕES -->
+    <div>
+
+      <h4 class="text-xl font-headline italic mb-8">
+        Produção Musical
+      </h4>
+
+
+      <div class="space-y-8">
+
+
+      <div>
+
+        <div class="flex justify-between mb-3">
+
+          <span class="text-sm">
+            Beatmaking
+          </span>
+
+        </div>
+
+        <audio controls class="w-full">
+        <source src="assets/trabalhos_rockschool/producoes/BEATMAKING - Sofia Sá.wav">
+        </audio>
+
+      </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+</section>
+
+
+
+----
+
+
+
+          <!-- MP3 LINKS / AUDIO SECTION -->
+<div>
+
+  <h4 class="text-xl font-headline italic tracking-tighter mb-5">
+    Trabalhos do âmbito do curso de Produção Musical (na Rockschool Porto)
+  </h4>
+
+  <div class="divide-y divide-white/10">
+
+    <!-- TRACK 1 -->
+    <div class="py-5 space-y-3 group">
+
+      <div class="flex justify-between items-center">
+        <span class="text-sm font-light">
+          Nome da cadeira — <em>Título do tema</em> (2025)
+        </span>
+      </div>
+
+      <audio controls class="w-full opacity-80 hover:opacity-100 transition">
+        <source src="assets/audio/track1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    </div>
+
+    <!-- TRACK 2 -->
+    <div class="py-5 space-y-3 group">
+
+      <div class="flex justify-between items-center">
+        <span class="text-sm font-light">
+          Nome do artista — <em>Título do tema</em> (2025)
+        </span>
+      </div>
+
+      <audio controls class="w-full opacity-80 hover:opacity-100 transition">
+        <source src="assets/audio/track2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    </div>
+
+    <!-- TRACK 3 -->
+    <div class="py-5 space-y-3 group">
+
+      <div class="flex justify-between items-center">
+        <span class="text-sm font-light">
+          Nome do artista — <em>Título do tema</em> (2025)
+        </span>
+      </div>
+
+      <audio controls class="w-full opacity-80 hover:opacity-100 transition">
+        <source src="assets/audio/track3.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    </div>
+
+    <!-- TRACK 4 -->
+    <div class="py-5 space-y-3 group">
+
+      <div class="flex justify-between items-center">
+        <span class="text-sm font-light">
+          Nome do artista — <em>Título do tema</em> (2025)
+        </span>
+      </div>
+
+      <audio controls class="w-full opacity-80 hover:opacity-100 transition">
+        <source src="assets/audio/track4.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    </div>
+
+  </div>
+
+</div>
