@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="dark" lang="pt">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sofia Sá — Portfólio Artístico</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="./assets/site/tw-config.js"></script>
+<link href="./assets/site/site.css" rel="stylesheet"/>
+</head>
+<body class="font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed">
+<div id="site-navbar"></div>
+<script src="./navbar-loader.js" defer></script>
+
+<!-- ================= HERO ================= -->
+<header class="relative min-h-screen flex flex-col justify-center px-6 md:px-12 pt-32 pb-24 overflow-hidden">
+  <div class="hero-v2-bg">
+    <img class="hero-v2-img" src="assets/images/fotos_modeling/luavermelha_4.JPG" alt=""/>
+    <div class="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/55"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent"></div>
+  </div>
+  <div class="relative z-10 max-w-7xl">
+    <p class="eyebrow mb-5 reveal">Artista &middot; Porto / Oliveira de Azeméis</p>
+    <h1 class="hero-v2-title mb-2">
+      <span class="hero-v2-line"><span>Sofia</span></span>
+      <span class="hero-v2-line" data-reveal-delay="110"><span>Sá</span></span>
+    </h1>
+    <div class="hero-v2-role reveal" data-reveal-delay="260">
+      <span class="hero-v2-role-label">Artista multidisciplinar em</span>
+      <span class="hero-v2-role-word" id="heroRoleWord">Música</span>
+    </div>
+    <div class="flex flex-col md:flex-row md:items-end justify-end gap-12 mt-14">
+      <div class="md:text-right reveal" data-reveal-delay="420">
+        <a href="#areas" class="hero-v2-cta">
+          <span>Ver Portfólio</span>
+          <span class="material-symbols-outlined">arrow_right_alt</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-v2-scroll">
+    <span class="text-[9px] tracking-[0.4em] uppercase">Scroll</span>
+    <span class="material-symbols-outlined">expand_more</span>
+  </div>
+</header>
+
+<!-- ================= STATEMENT ================= -->
+<section class="py-16 md:py-20 px-6 md:px-12 bg-surface-container-low">
+  <div class="max-w-2xl mx-auto text-center reveal">
+    <p class="text-xl md:text-3xl leading-snug serif-italic font-light">
+      A curiosidade sem fronteiras é o que me move — da lógica de um algoritmo ao silêncio antes de uma canção.
+    </p>
+    <div class="mt-8 flex justify-center">
+      <div class="w-px h-10 bg-gradient-to-b from-primary to-transparent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ÁREAS DE INTERESSE ================= -->
+<section id="areas" class="py-28 md:py-32 bg-surface">
+  <div class="px-6 md:px-12 mb-20 md:mb-24 flex flex-wrap justify-between items-baseline gap-4 reveal">
+    <h3 class="text-4xl md:text-5xl serif-italic">Áreas de interesse</h3>
+    <span class="eyebrow">Desce para explorar</span>
+  </div>
+
+  <div class="flex flex-col gap-36 md:gap-48">
+
+    <!-- Música -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center px-6 md:px-12">
+      <div class="md:col-start-1 md:col-span-8 aspect-[21/15] overflow-hidden bg-surface-container-highest reveal" data-reveal="left">
+        <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-[2000ms]" src="assets/images/music_fotos/fotos_performance/performance_anoNovoAlgarve.JPG" alt="Performance de música"/>
+      </div>
+      <div class="md:col-start-10 md:col-span-3 reveal" data-reveal="right">
+        <span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">01</span>
+        <h4 class="text-4xl serif-italic mb-6">Música</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6 font-light tracking-wide">
+          Comecei na música aos 5 anos, ao piano, e a cantar pouco depois. Completei o 8.º grau de piano na Academia de Música de São João da Madeira e, aos 13, comecei a escrever as minhas próprias canções, lançadas em todas as plataformas.
+        </p>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-light tracking-wide">
+          Em 2024 iniciei o Curso de Produção Musical na Rockschool, Porto, e integro hoje a equipa de produção do produtor João André.
+        </p>
+        <a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors" href="./music.html">Ver mais</a>
+      </div>
+    </div>
+
+    <!-- Dança -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center px-6 md:px-12">
+      <div class="md:col-start-2 md:col-span-3 order-2 md:order-1 reveal" data-reveal="left">
+        <span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">02</span>
+        <h4 class="text-4xl serif-italic mb-6">Dança</h4>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-8 font-light tracking-wide">
+          Desde os 8 anos que exploro a dança em diferentes estilos — Hip Hop, Comercial e Contemporâneo — tendo participado e sido premiada em diversos espetáculos.
+        </p>
+        <a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors" href="./dance.html">Ver mais</a>
+      </div>
+      <div class="md:col-start-6 md:col-span-7 order-1 md:order-2 aspect-[16/10] overflow-hidden bg-surface-container-highest reveal" data-reveal="right">
+        <img class="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-105 transition-all duration-[2000ms]" src="assets/images/video_posters/dance/dancacasa1.jpg" alt="Dança"/>
+      </div>
+    </div>
+
+    <!-- Fotografia -->
+    <div class="px-6 md:px-24">
+      <div class="relative aspect-[21/9] overflow-hidden bg-surface-container-highest reveal">
+        <img class="w-full h-full object-cover brightness-50" src="assets/images/fotos_canon/canon6.JPG" alt="Fotografia"/>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-12">
+          <span class="text-[10px] tracking-[0.5em] text-white/60 uppercase mb-6 block">03</span>
+          <h4 class="text-6xl md:text-8xl serif-italic mb-8">Fotografia</h4>
+          <a class="bg-white text-black px-12 py-4 text-[10px] tracking-[0.3em] uppercase hover:bg-neutral-200 transition-colors" href="./photography.html#fotografa">Galeria</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teatro / Modelo / Engenharia -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 px-6 md:px-12">
+      <div class="flex flex-col reveal">
+        <div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8">
+          <img class="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-1000" src="assets/images/fotos_teatro/teatro2223_2.JPG" alt="Teatro"/>
+        </div>
+        <span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">04</span>
+        <h4 class="text-3xl serif-italic mb-4">Teatro e Representação</h4>
+        <p class="text-on-surface-variant text-sm font-light leading-relaxed mb-4">Aulas de teatro, peças, curtas-metragens e videoclips.</p>
+        <a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors self-start" href="./acting.html">Ver mais</a>
+      </div>
+
+      <div class="flex flex-col md:mt-24 reveal" data-reveal-delay="90">
+        <div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8">
+          <img class="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-1000" src="assets/images/fotos_modeling/camisolacinzenta_2.JPG" alt="Modelo"/>
+        </div>
+        <span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">05</span>
+        <h4 class="text-3xl serif-italic mb-4">Modelo</h4>
+        <p class="text-on-surface-variant text-sm font-light leading-relaxed mb-4">Sessões fotográficas e editoriais.</p>
+        <a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors self-start" href="./photography.html#modelo">Ver mais</a>
+      </div>
+
+      <div class="flex flex-col reveal" data-reveal-delay="180">
+        <div class="aspect-[3/4] overflow-hidden bg-surface-container-low mb-8">
+          <img class="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-1000" src="assets/images/fotos_feup/traje1.JPEG" alt="Engenharia FEUP"/>
+        </div>
+        <span class="text-[10px] tracking-[0.5em] text-white/40 uppercase mb-4 block">06</span>
+        <h4 class="text-3xl serif-italic mb-4">Engenharia</h4>
+        <p class="text-on-surface-variant text-sm font-light leading-relaxed mb-4">Licenciatura em Engenharia Informática na FEUP e Mestrado em Engenharia de Serviços e Gestão.</p>
+        <a class="text-[10px] tracking-widest uppercase border-b border-white/20 pb-1 hover:border-white transition-colors self-start" href="./feup.html">Ver mais</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CVs & CERTIFICADOS ================= -->
+<section id="documentos" class="py-28 md:py-40 px-6 md:px-12 bg-surface-container-low">
+  <div class="max-w-screen-2xl mx-auto">
+    <div class="mb-16 md:mb-20 max-w-2xl reveal">
+      <span class="eyebrow block mb-4">Arquivo</span>
+      <h3 class="text-4xl md:text-6xl serif-italic mb-6">Currículos</h3>
+      <p class="text-on-surface-variant text-sm font-light leading-relaxed">
+        Currículos em PDF, disponíveis para consulta e descarregamento.
+      </p>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-6 md:items-stretch">
+      <!-- CV Arte -->
+      <a class="cv-card group reveal" href="assets/certificados/CV/CV Sofia Sá Arte (julho26).pdf">
+        <img src="assets/images/pdf_previews/cv/CV Sofia Sá Arte (julho26).pdf.png" alt="Currículo de Arte"/>
+        <span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">picture_as_pdf</span>
+        <div class="cv-card-meta">
+          <p>Currículo de Arte</p>
+          <p>Música, Dança e Teatro</p>
+        </div>
+      </a>
+
+      <!-- CV Engenharia -->
+      <a class="cv-card group reveal" href="assets/certificados/CV/CV Sofia Sá Engenharia (julho26).pdf" data-reveal-delay="90">
+        <img src="assets/images/pdf_previews/cv/CV Sofia Sá Engenharia (julho26).pdf.png" alt="Currículo de Engenharia"/>
+        <span class="dip-scrim"></span>
+        <span class="material-symbols-outlined">picture_as_pdf</span>
+        <div class="cv-card-meta">
+          <p>Currículo de Engenharia</p>
+          <p>Engenharia Informática · FEUP</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CALL TO ACTION ================= -->
+<section class="py-28 md:py-36 px-6 md:px-12 text-center bg-surface-container-lowest">
+  <h2 class="text-4xl md:text-8xl serif-italic mb-12 max-w-5xl mx-auto leading-tight reveal">Vamos criar algo <span class="opacity-40">juntos?</span></h2>
+  <a class="inline-flex items-center gap-4 group reveal" href="mailto:sofiasaoficial@gmail.com">
+    <span class="text-xl md:text-2xl font-light tracking-widest uppercase border-b border-white/40 pb-2 group-hover:border-white transition-all">Contacta-me</span>
+    <span class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+  </a>
+</section>
+
+<div id="site-footer"></div>
+<script src="./footer-loader.js" defer></script>
+<script src="./assets/site/enhance.js" defer></script>
+</body>
+</html>
