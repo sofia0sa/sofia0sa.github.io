@@ -71,38 +71,12 @@
   function setLanguage(language) {
     document.documentElement.setAttribute("data-language", language);
     document.documentElement.lang = language === "en" ? "en" : "pt";
-    localStorage.setItem("sofia-language", language);
+    localStorage.setItem("sofia-language-v2", language);
     document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
       button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
       button.innerHTML = language === "en" ? "<span>PT</span><b>ENG</b>" : "<b>PT</b><span>ENG</span>";
     });
     translate(document);
-  }
-
-  function showLanguagePrompt() {
-    if (localStorage.getItem("sofia-language")) return;
-    var prompt = document.createElement("div");
-    prompt.className = "language-prompt";
-    prompt.setAttribute("role", "dialog");
-    prompt.setAttribute("aria-modal", "true");
-    prompt.setAttribute("aria-labelledby", "language-prompt-title");
-    prompt.innerHTML =
-      '<div class="language-prompt-panel">' +
-      '  <span class="eyebrow">Sofia Sá</span>' +
-      '  <h2 id="language-prompt-title">Escolhe o idioma<br><em>Choose your language</em></h2>' +
-      '  <div class="language-prompt-actions">' +
-      '    <button type="button" data-prompt-language="pt">Português</button>' +
-      '    <button type="button" data-prompt-language="en">English</button>' +
-      '  </div>' +
-      '</div>';
-    document.body.appendChild(prompt);
-    prompt.querySelectorAll("[data-prompt-language]").forEach(function (button) {
-      button.addEventListener("click", function () {
-        setLanguage(button.getAttribute("data-prompt-language"));
-        prompt.classList.add("is-closing");
-        setTimeout(function () { prompt.remove(); }, 250);
-      });
-    });
   }
 
   document.addEventListener("click", function (event) {
@@ -111,9 +85,18 @@
   });
 
   var observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) { mutation.addedNodes.forEach(function (node) { if (node.nodeType === 1) translate(node); }); });
+    mutations.forEach(function (mutation) {
+      mutation.addedNodes.forEach(function (node) {
+        if (node.nodeType === 1) translate(node);
+      });
+    });
+    var language = document.documentElement.getAttribute("data-language");
+    document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
+      button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
+      button.innerHTML = language === "en" ? "<span>PT</span><b>ENG</b>" : "<b>PT</b><span>ENG</span>";
+    });
   });
   observer.observe(document.documentElement, { childList: true, characterData: true, subtree: true });
   setLanguage(localStorage.getItem("sofia-language") || "pt");
-  showLanguagePrompt();
+  setLanguage(localStorage.getItem("sofia-language-v2") || "pt");
 })();
