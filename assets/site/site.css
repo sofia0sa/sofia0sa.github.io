@@ -29,6 +29,15 @@ a:hover { color: #ffffff; }
   font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
 }
 
+.site-language-toggle {
+  display: inline-flex; align-items: center; gap: 0.45rem; margin-left: 1.25rem;
+  border: 1px solid rgba(255,255,255,.25); padding: .45rem .6rem; color: rgba(255,255,255,.55);
+  font: 500 10px/1 Inter, sans-serif; letter-spacing: .12em; cursor: pointer; background: transparent;
+}
+.site-language-toggle b { color: #fff; font-weight: 500; }
+.site-language-toggle:hover { border-color: rgba(255,255,255,.7); color: #fff; }
+@media (max-width: 900px) { .site-language-toggle { margin-left: auto; margin-right: .75rem; } }
+
 /* Título de entrada — MESMO tratamento em todas as páginas */
 .page-title {
   font-family: Newsreader, serif;
