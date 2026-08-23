@@ -79,6 +79,32 @@
     translate(document);
   }
 
+  function showLanguagePrompt() {
+    if (localStorage.getItem("sofia-language")) return;
+    var prompt = document.createElement("div");
+    prompt.className = "language-prompt";
+    prompt.setAttribute("role", "dialog");
+    prompt.setAttribute("aria-modal", "true");
+    prompt.setAttribute("aria-labelledby", "language-prompt-title");
+    prompt.innerHTML =
+      '<div class="language-prompt-panel">' +
+      '  <span class="eyebrow">Sofia Sá</span>' +
+      '  <h2 id="language-prompt-title">Escolhe o idioma<br><em>Choose your language</em></h2>' +
+      '  <div class="language-prompt-actions">' +
+      '    <button type="button" data-prompt-language="pt">Português</button>' +
+      '    <button type="button" data-prompt-language="en">English</button>' +
+      '  </div>' +
+      '</div>';
+    document.body.appendChild(prompt);
+    prompt.querySelectorAll("[data-prompt-language]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        setLanguage(button.getAttribute("data-prompt-language"));
+        prompt.classList.add("is-closing");
+        setTimeout(function () { prompt.remove(); }, 250);
+      });
+    });
+  }
+
   document.addEventListener("click", function (event) {
     var button = event.target.closest("[data-language-toggle]");
     if (button) setLanguage(document.documentElement.getAttribute("data-language") === "en" ? "pt" : "en");
@@ -89,4 +115,5 @@
   });
   observer.observe(document.documentElement, { childList: true, characterData: true, subtree: true });
   setLanguage(localStorage.getItem("sofia-language") || "pt");
+  showLanguagePrompt();
 })();

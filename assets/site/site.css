@@ -38,6 +38,25 @@ a:hover { color: #ffffff; }
 .site-language-toggle:hover { border-color: rgba(255,255,255,.7); color: #fff; }
 @media (max-width: 900px) { .site-language-toggle { margin-left: auto; margin-right: .75rem; } }
 
+.language-prompt {
+  position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; padding: 1.5rem;
+  background: rgba(0,0,0,.78); backdrop-filter: blur(8px); opacity: 1; transition: opacity .25s ease;
+}
+.language-prompt.is-closing { opacity: 0; }
+.language-prompt-panel {
+  width: min(430px, 100%); padding: 3rem; background: #1b1b1b; border: 1px solid rgba(255,255,255,.16);
+  box-shadow: 0 24px 80px rgba(0,0,0,.45); text-align: center;
+}
+.language-prompt-panel h2 { margin: 1rem 0 2rem; color: #fff; font: 300 2.4rem/1 Newsreader, serif; }
+.language-prompt-panel h2 em { color: rgba(255,255,255,.55); font-size: .72em; }
+.language-prompt-actions { display: flex; gap: .75rem; justify-content: center; }
+.language-prompt-actions button {
+  flex: 1; padding: .9rem 1rem; border: 1px solid rgba(255,255,255,.28); background: transparent;
+  color: #fff; font: 500 10px/1 Inter, sans-serif; letter-spacing: .14em; text-transform: uppercase; cursor: pointer;
+}
+.language-prompt-actions button:hover { background: #fff; color: #111; }
+@media (max-width: 480px) { .language-prompt-panel { padding: 2.25rem 1.25rem; } }
+
 /* Título de entrada — MESMO tratamento em todas as páginas */
 .page-title {
   font-family: Newsreader, serif;
