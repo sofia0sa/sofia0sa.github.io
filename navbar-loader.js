@@ -31,7 +31,7 @@
 '    <div class="site-nav-item"><a class="site-nav-link" data-page="contact" href="./contact.html">Contacto</a></div>',
 '  </div>',
 '  <button class="site-nav-menu-btn" type="button" aria-label="Abrir menu"><span class="material-symbols-outlined">menu</span></button>',
-'  <button class="site-language-toggle" type="button" data-language-toggle aria-label="Switch language" aria-pressed="false"><b>PT</b><span>ENG</span></button>',
+'  <button class="site-language-toggle" type="button" data-language-toggle aria-label="Switch language" aria-pressed="false"><span>PT</span><b>ENG</b></button>',
 '</nav>',
 '<div class="site-mobile-menu" aria-label="Menu">',
 '  <a class="site-mobile-link" data-page="home" href="./home.html">Início</a>',

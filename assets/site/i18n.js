@@ -68,16 +68,21 @@
     });
   }
 
+  function updateToggleButtons(language) {
+    document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
+      button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
+      var span = button.querySelector("span");
+      var b = button.querySelector("b");
+      if (span) span.classList.toggle("is-active", language === "pt");
+      if (b) b.classList.toggle("is-active", language === "en");
+    });
+  }
+
   function setLanguage(language) {
     document.documentElement.setAttribute("data-language", language);
     document.documentElement.lang = language === "en" ? "en" : "pt";
     localStorage.setItem("sofia-language-v2", language);
-    document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
-      button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
-      button.innerHTML = '<span>PT</span><b>ENG</b>';
-      button.querySelector("span").classList.toggle("is-active", language === "pt");
-      button.querySelector("b").classList.toggle("is-active", language === "en");
-    });
+    updateToggleButtons(language);
     translate(document);
   }
 
@@ -92,14 +97,7 @@
         if (node.nodeType === 1) translate(node);
       });
     });
-    var language = document.documentElement.getAttribute("data-language");
-    document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
-      button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
-      var content = "<span>PT</span><b>ENG</b>";
-      if (button.innerHTML !== content) button.innerHTML = content;
-      button.querySelector("span").classList.toggle("is-active", language === "pt");
-      button.querySelector("b").classList.toggle("is-active", language === "en");
-    });
+    updateToggleButtons(document.documentElement.getAttribute("data-language"));
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
   setLanguage(localStorage.getItem("sofia-language-v2") || "pt");
