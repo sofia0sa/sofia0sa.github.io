@@ -218,7 +218,7 @@
       el.classList.add("is-swapping");
       setTimeout(function () {
         i = (i + 1) % words.length;
-        el.textContent = words[i];
+        el.textContent = window.SofiaI18n ? window.SofiaI18n.t(words[i]) : words[i];
         el.classList.remove("is-swapping");
       }, 450);
     }, 2400);
