@@ -74,7 +74,9 @@
     localStorage.setItem("sofia-language-v2", language);
     document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
       button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
-      button.innerHTML = language === "en" ? "<span>PT</span><b>ENG</b>" : "<b>PT</b><span>ENG</span>";
+      button.innerHTML = '<span>PT</span><b>ENG</b>';
+      button.querySelector("span").classList.toggle("is-active", language === "pt");
+      button.querySelector("b").classList.toggle("is-active", language === "en");
     });
     translate(document);
   }
@@ -93,8 +95,10 @@
     var language = document.documentElement.getAttribute("data-language");
     document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
       button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
-      var content = language === "en" ? "<span>PT</span><b>ENG</b>" : "<b>PT</b><span>ENG</span>";
+      var content = "<span>PT</span><b>ENG</b>";
       if (button.innerHTML !== content) button.innerHTML = content;
+      button.querySelector("span").classList.toggle("is-active", language === "pt");
+      button.querySelector("b").classList.toggle("is-active", language === "en");
     });
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
