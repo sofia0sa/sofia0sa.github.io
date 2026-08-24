@@ -34,9 +34,9 @@ a:hover { color: #ffffff; }
   border: 1px solid rgba(255,255,255,.25); padding: .45rem .6rem; color: rgba(255,255,255,.55);
   font: 500 10px/1 Inter, sans-serif; letter-spacing: .12em; cursor: pointer; background: transparent;
 }
-.site-language-toggle b { color: rgba(255,255,255,.55); font-weight: 500; }
+.site-language-toggle span, .site-language-toggle b { color: rgba(255,255,255,.55); font-weight: 500; }
 .site-language-toggle .is-active { color: #fff; font-weight: 500; }
-.site-language-toggle:hover { border-color: rgba(255,255,255,.7); color: #fff; }
+.site-language-toggle:hover { border-color: rgba(255,255,255,.7); }
 @media (max-width: 900px) { .site-language-toggle { margin-left: auto; margin-right: .75rem; } }
 
 

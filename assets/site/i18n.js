@@ -88,7 +88,12 @@
 
   document.addEventListener("click", function (event) {
     var button = event.target.closest("[data-language-toggle]");
-    if (button) setLanguage(document.documentElement.getAttribute("data-language") === "en" ? "pt" : "en");
+    if (!button) return;
+    var label = event.target.closest("span, b");
+    var language = (label && button.contains(label))
+      ? (label.tagName === "B" ? "en" : "pt")
+      : (document.documentElement.getAttribute("data-language") === "en" ? "pt" : "en");
+    setLanguage(language);
   });
 
   var observer = new MutationObserver(function (mutations) {
