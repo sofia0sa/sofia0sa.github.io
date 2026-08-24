@@ -93,10 +93,10 @@
     var language = document.documentElement.getAttribute("data-language");
     document.querySelectorAll("[data-language-toggle]").forEach(function (button) {
       button.setAttribute("aria-pressed", language === "en" ? "true" : "false");
-      button.innerHTML = language === "en" ? "<span>PT</span><b>ENG</b>" : "<b>PT</b><span>ENG</span>";
+      var content = language === "en" ? "<span>PT</span><b>ENG</b>" : "<b>PT</b><span>ENG</span>";
+      if (button.innerHTML !== content) button.innerHTML = content;
     });
   });
-  observer.observe(document.documentElement, { childList: true, characterData: true, subtree: true });
-  setLanguage(localStorage.getItem("sofia-language") || "pt");
+  observer.observe(document.documentElement, { childList: true, subtree: true });
   setLanguage(localStorage.getItem("sofia-language-v2") || "pt");
 })();
