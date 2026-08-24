@@ -61,7 +61,7 @@
     (root || document).querySelectorAll("[alt], [title], [aria-label], [data-title], [placeholder], [data-placeholder]").forEach(function (element) {
       ["alt", "title", "aria-label", "data-title", "placeholder", "data-placeholder"].forEach(function (attribute) {
         if (!element.hasAttribute(attribute)) return;
-        var key = attribute + "Original";
+        var key = attribute.replace(/[^a-zA-Z0-9]/g, "_") + "Original";
         if (!element.dataset[key]) element.dataset[key] = element.getAttribute(attribute);
         element.setAttribute(attribute, isEnglish ? translateText(element.dataset[key]) : element.dataset[key]);
       });
