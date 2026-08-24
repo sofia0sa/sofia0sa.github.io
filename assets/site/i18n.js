@@ -316,6 +316,7 @@
     "O meu Projeto Final": "My Final Project",
     "Projeto final · Curso de Produção Musical": "Final project · Music Production Course",
     "Capa do single": "Single cover",
+    "Relatório do projeto (em português)": "Project report (in Portuguese)",
     "Capa do single - Questões": "Single cover - Questões",
     "Design de Som": "Sound Design",
     "Projeto Final": "Final Project",
